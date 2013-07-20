@@ -1,4 +1,4 @@
 rfoaas
 ======
 
-R interface to FOAAS service
+R interface to the [FOAAS](http://foaas.com) service 
