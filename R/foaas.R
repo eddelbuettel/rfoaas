@@ -20,4 +20,5 @@ king        <- function(name, from) { .foaas("king", name, from) }
 pink        <- function(name, from) { .foaas("pink", name, from) }
 life        <- function(name, from) { .foaas("life", name, from) }
 chainsaw    <- function(name, from) { .foaas("chainsaw", name, from) }
+thing       <- function(from)       { .foaas("thing", from) }
 thanks      <- function(from)       { .foaas("thanks", from) }

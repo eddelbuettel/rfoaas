@@ -14,6 +14,7 @@
 \alias{pink}
 \alias{life}
 \alias{chainsaw}
+\alias{thing}
 \alias{thanks}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -35,6 +36,7 @@
   pink(name, from)
   life(name, from)
   chainsaw(name, from)
+  thing(from)
   thanks(from)
 }
 \arguments{
