@@ -36,7 +36,7 @@
   pink(name, from)
   life(name, from)
   chainsaw(name, from)
-  thing(from)
+  thing(name, from)
   thanks(from)
 }
 \arguments{
