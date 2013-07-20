@@ -1,6 +1,7 @@
 
 .foaas <- function(...) {
-    req <- paste(..., sep="/")
+    req <- paste(..., sep="/")          # collate arguments
+    req <- gsub(" ", "%20", req) 	# protect spaces
     con <- url(paste0("http://foaas.com/", req))
     res <- readLines(con, n=1, warn=FALSE)
     close(con)
