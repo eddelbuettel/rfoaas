@@ -34,7 +34,7 @@
   linus(name, from)
   king(name, from)
   pink(name, from)
-  life(name, from)
+  life(name)
   chainsaw(name, from)
   thing(name, from)
   thanks(from)
