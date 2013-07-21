@@ -1,9 +1,8 @@
 
 .foaas <- function(...) {
-    req <- paste(..., sep="/")          # collate arguments
-    req <- gsub(" ", "%20", req) 	# protect spaces
-    con <- url(paste0("http://foaas.com/", req))
-    res <- readLines(con, n=1, warn=FALSE)
+    req <- URLencode(paste(..., sep="/"))      	 # collate arguments and encode
+    con <- url(paste0("http://foaas.com/", req)) # form url and create connection
+    res <- readLines(con, n=1, warn=FALSE)       # read one line from connection
     close(con)
     res
 }
