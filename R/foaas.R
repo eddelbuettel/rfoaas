@@ -22,3 +22,4 @@ life        <- function(name)       { .foaas("life", name) }
 chainsaw    <- function(name, from) { .foaas("chainsaw", name, from) }
 thing       <- function(name, from) { .foaas(name, from) }
 thanks      <- function(from)       { .foaas("thanks", from) }
+flying      <- function(from)       { .foaas("flying", from) }
