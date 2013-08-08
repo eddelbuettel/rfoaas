@@ -17,6 +17,7 @@
 \alias{thing}
 \alias{thanks}
 \alias{flying}
+\alias{fascinating}
 \docType{package}
 \title{R Interface to FOAAS}
 \description{
@@ -39,7 +40,7 @@
   chainsaw(name, from)
   thing(name, from)
   thanks(from)
-  flying(from)
+  fascinating(from)
 }
 \arguments{
   \item{name}{The name to whom the message is directed.}
