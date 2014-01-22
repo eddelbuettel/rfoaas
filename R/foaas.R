@@ -1,8 +1,8 @@
 
 .foaas <- function(...) {
-    req <- URLencode(paste(..., sep="/"))      	 # collate arguments and encode
-    con <- url(paste0("http://foaas.com/", req)) # form url and create connection
-    res <- readLines(con, n=1, warn=FALSE)       # read one line from connection
+    req <- URLencode(paste(..., sep="/"))     	         	# collate arguments and encode
+    con <- url(paste0("http://foaas.herokuapp.com/", req)) 	# form url and create connection
+    res <- readLines(con, n=1, warn=FALSE)       		# read one line from connection
     close(con)
     res
 }
@@ -24,3 +24,4 @@ thing       <- function(name, from) { .foaas(name, from) }
 thanks      <- function(from)       { .foaas("thanks", from) }
 flying      <- function(from)       { .foaas("flying", from) }
 fascinating <- function(from)       { .foaas("fascinating", from) }
+#madison     <- function(name, from) { .foaas("madison", name, from) }
