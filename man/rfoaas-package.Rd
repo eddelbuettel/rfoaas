@@ -85,4 +85,10 @@
   exception being \code{operations()}, see above).
 }
 \author{Dirk Eddelbuettel}
+\examples{
+\dontrun{                   # as we need a needwork connection
+version()                   # returns current API version
+madison("Billy", "Eric")    # example 'madison' API accessor
+}
+}
 \keyword{package}

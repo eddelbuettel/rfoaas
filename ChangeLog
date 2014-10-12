@@ -1,3 +1,12 @@
+2014-10-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Version 0.0.4 (corresponding to FOAAS API 0.0.4)
+
+	* R/foaas.R: Added version() and operations() meta accessors
+
+	* man/rfoaas-package.Rd: Updated to API 0.0.4, and expanded with
+	examples section
+
 2014-10-11  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/foaas.R: Activated madison(), added cool(), field() and nugget()
