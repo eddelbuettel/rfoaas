@@ -14,14 +14,15 @@
 \alias{pink}
 \alias{life}
 \alias{chainsaw}
+\alias{outside}
 \alias{thing}
 \alias{thanks}
 \alias{flying}
 \alias{fascinating}
 \alias{madison}
 \alias{cool}
-\alias{nugget}
 \alias{field}
+\alias{nugget}
 \docType{package}
 \title{R Interface to FOAAS}
 \description{
@@ -42,12 +43,14 @@
   pink(name)
   life(name)
   chainsaw(name, from)
+  outside(name, from)
   thing(name, from)
   thanks(from)
   fascinating(from)
   madison(name, from)
   cool(from)
   field(name, from, reference)
+  nugget(name, from)
 }
 \arguments{
   \item{name}{The name to whom the message is directed.}
