@@ -18,7 +18,10 @@
 \alias{thanks}
 \alias{flying}
 \alias{fascinating}
-%\alias{madison}
+\alias{madison}
+\alias{cool}
+\alias{nugget}
+\alias{field}
 \docType{package}
 \title{R Interface to FOAAS}
 \description{
@@ -36,17 +39,20 @@
   shakespeare(name, from)
   linus(name, from)
   king(name, from)
-  pink(name, from)
+  pink(name)
   life(name)
   chainsaw(name, from)
   thing(name, from)
   thanks(from)
   fascinating(from)
-  %% madison(name, from)
+  madison(name, from)
+  cool(from)
+  field(name, from, reference)
 }
 \arguments{
   \item{name}{The name to whom the message is directed.}
   \item{from}{The name of the message requester.}
+  \item{reference}{An additional reference in the message.}
 }
 \value{
   A text string with the request FOAAS message is returned.
