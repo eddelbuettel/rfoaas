@@ -51,6 +51,9 @@
   cool(from)
   field(name, from, reference)
   nugget(name, from)
+
+  version()
+  operations()
 }
 \arguments{
   \item{name}{The name to whom the message is directed.}
@@ -58,12 +61,26 @@
   \item{reference}{An additional reference in the message.}
 }
 \value{
-  A text string with the request FOAAS message is returned.
+  For all but one queries, a text string with the request FOAAS message is returned.
+
+  The exception is the very last query listed: \code{operations()}
+  returns a JSON object describing all queries currently supported by
+  the API, along with their (descriptive) name, the URL and the
+  supported fields. As the return object is in JSON, one the available
+  JSON parsers implementing a \code{fromJSON()} method is recommended to
+  convert it into a native R object.
 }
 \details{
-  See \url{http://foaas.com} for complete service details.
+  The \code{operations()} query returns a JSON object describing the
+  current API. The \code{version()} function returns the current API
+  version (as text). All other methods return the requested FOAAS
+  message using the given arguments.
 
-  At present, only plain text requests are made and returned.
+  See \url{http://foaas.com} for complete service details at the current
+  API level.
+
+  At present, only plain text requests are made and returned (with one
+  exception being \code{operations()}, see above).
 }
 \author{Dirk Eddelbuettel}
 \keyword{package}
