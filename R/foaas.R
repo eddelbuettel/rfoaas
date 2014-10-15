@@ -54,10 +54,10 @@ madison     <- function(name, from)            { .foaas("madison", name, from) }
 cool        <- function(from)                  { .foaas("cool", from) }
 field       <- function(name, from, reference) { .foaas("field", name, from, reference) }
 nugget      <- function(name, from)            { .foaas("nugget", name, from) }
-
-# in the code at https://github.com/tomdionysus/foaas/blob/master/public/index.html
-# but not yet running -- ready for 0.0.5
-#yoda        <- function(name, from)            { .foaas("yoda", name, from) }
-#ballmer     <- function(name, company, from)   { .foaas("ballmer", name, from) }
+yoda        <- function(name, from)            { .foaas("yoda", name, from) }
+ballmer     <- function(name, company, from)   { .foaas("ballmer", name, company, from) }
+what        <- function(from)                  { .foaas("what", from) }
+because     <- function(from)                  { .foaas("because", from) }
+caniuse     <- function(tool, from)            { .foaas("caniuse", tool, from) }
 
 

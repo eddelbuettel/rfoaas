@@ -25,6 +25,11 @@
 \alias{cool}
 \alias{field}
 \alias{nugget}
+\alias{yoda}
+\alias{ballmer}
+\alias{what}
+\alias{because}
+\alias{caniuse}
 \docType{package}
 \title{R Interface to FOAAS}
 \description{
@@ -53,6 +58,11 @@
   cool(from)
   field(name, from, reference)
   nugget(name, from)
+  yoda(name, from)
+  ballmer(name, company, from)
+  what(from)
+  because(from)
+  caniuse(tool, from)
 
   version()
   operations()
@@ -61,9 +71,12 @@
   \item{name}{The name to whom the message is directed.}
   \item{from}{The name of the message requester.}
   \item{reference}{An additional reference in the message.}
+  \item{company}{A company reference in the message.}
+  \item{tool}{A company reference in the message.}
 }
 \value{
-  For all but one queries, a text string with the request FOAAS message is returned.
+  For all (but one) queries, a text string with the request FOAAS
+  message is returned. 
 
   The exception is the very last query listed: \code{operations()}
   returns a JSON object describing all queries currently supported by
