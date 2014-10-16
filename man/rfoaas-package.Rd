@@ -100,8 +100,16 @@
 \author{Dirk Eddelbuettel}
 \examples{
 \dontrun{                   # as we need a needwork connection
-version()                   # returns current API version
-madison("Billy", "Eric")    # example 'madison' API accessor
+
+    ## returns current API version
+    version()
+
+    ## example 'madison' accessor in API
+    madison("Billy", "Eric")
+
+    ## operations() returns JSON object listing the accessible functionality
+    if (require(jsonline)) print(fromJSON(operations()))
+
 }
 }
 \keyword{package}
