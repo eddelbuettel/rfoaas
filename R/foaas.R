@@ -46,7 +46,6 @@ pink        <- function(name)                  { .foaas("pink", name) }
 life        <- function(name)                  { .foaas("life", name) }
 chainsaw    <- function(name, from)            { .foaas("chainsaw", name, from) }
 outside     <- function(name, from)            { .foaas("outside", name, from) }
-thing       <- function(name, from)            { .foaas(name, from) }
 thanks      <- function(from)                  { .foaas("thanks", from) }
 flying      <- function(from)                  { .foaas("flying", from) }
 fascinating <- function(from)                  { .foaas("fascinating", from) }
@@ -59,5 +58,9 @@ ballmer     <- function(name, company, from)   { .foaas("ballmer", name, company
 what        <- function(from)                  { .foaas("what", from) }
 because     <- function(from)                  { .foaas("because", from) }
 caniuse     <- function(tool, from)            { .foaas("caniuse", tool, from) }
-
+bye         <- function(from)                  { .foaas("bye", from) }
+diabetes    <- function(from)                  { .foaas("diabetes", from) }
+bus         <- function(from)                  { .foaas("bus", from) }
+## catch-all 
+thing       <- function(name, from)            { .foaas(name, from) }
 

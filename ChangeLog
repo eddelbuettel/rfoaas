@@ -1,3 +1,13 @@
+2014-12-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Version 0.0.4.20141212 [as upstream does not increment
+	its version]
+
+	* R/foaas.R: Added bye(), diabetes(), and bus()
+	which are now active at http://foaas.com
+
+	* man/rfoaas-package.Rd: Updated accordingly
+
 2014-10-16  Dirk Eddelbuettel  <edd@debian.org>
 
 	* man/rfoaas-package.Rd: Expand examples section
