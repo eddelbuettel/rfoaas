@@ -1,8 +1,8 @@
 Package: rfoaas
 Type: Package
 Title: R Interface to FOAAS 
-Version: 0.0.4.20141212
-Date: 2014-12-13
+Version: 0.0.4.20141224
+Date: 2014-12-24
 Author: Dirk Eddelbuettel <edd@debian.org>
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: R access to the FOAAS (F... Off As A Service) web service 
