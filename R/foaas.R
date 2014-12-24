@@ -26,8 +26,7 @@
 }
 
 .from <- function() {
-    getOption("rfoaasFrom",
-              Sys.getenv(if (Sys.info()["sysname"]=="unix") "USER" else "USERNAME"))
+    getOption("rfoaasFrom", Sys.info()["user"])
 }
 
 ## 'meta' query one -- returns a version string
