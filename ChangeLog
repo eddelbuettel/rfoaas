@@ -1,3 +1,8 @@
+2014-12-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* man/rfoaas-package.Rd: Add that some replies may need UTF-8
+	encoding (as eg the linus() function as the Windows OS)
+
 2014-12-13  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Version 0.0.4.20141212 [as upstream does not increment

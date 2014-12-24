@@ -90,6 +90,12 @@
   supported fields. As the return object is in JSON, one the available
   JSON parsers implementing a \code{fromJSON()} method is recommended to
   convert it into a native R object.
+
+  On the Windows operating system, UTF-8 encoding may need to be set
+  explicitly when a character set containing characters requiring it is
+  returned.  Currently only the \code{linus()} functions does this from
+  the server side, though result sets may of course contain other
+  encodings if the user supplied values did. 
 }
 \details{
   The \code{operations()} query returns a JSON object describing the
@@ -115,6 +121,10 @@
 
     ## operations() returns JSON object listing the accessible functionality
     if (require(jsonline)) print(fromJSON(operations()))
+
+    ## example 'linus' result in UTF-8
+    res <- madison("Billy", "Eric")
+    Encoding(res) <- "UTF-8"    ## needed on Windows 
 
 }
 }
