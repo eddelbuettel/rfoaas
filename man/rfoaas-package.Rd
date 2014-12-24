@@ -108,6 +108,11 @@
 
   At present, only plain text requests are made and returned (with one
   exception being \code{operations()}, see above).
+
+  The \code{from} argument uses an internal helper function to supply a
+  default value: either an R \code{options()} variable accessible via
+  the key \code{rfoaasFrom}, or the value of \code{Sys.info()["user"]}
+  as fallback.
 }
 \author{Dirk Eddelbuettel}
 \examples{
