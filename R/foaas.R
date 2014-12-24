@@ -25,6 +25,11 @@
     res
 }
 
+.from <- function() {
+    getOption("rfoaasFrom",
+              Sys.getenv(if (Sys.info()["sysname"]=="unix") "USER" else "USERNAME"))
+}
+
 ## 'meta' query one -- returns a version string
 version     <- function()                      { .foaas("version") }
 
@@ -32,35 +37,37 @@ version     <- function()                      { .foaas("version") }
 ## As this returns JSON, use RJSONIO or jsonlite to deal with the result
 operations  <- function()                      { .foaas("operations", n=-1) }
 
-off         <- function(name, from)            { .foaas("off", name, from) }
-you         <- function(name, from)            { .foaas("you", name, from) }
-this        <- function(from)                  { .foaas("this", from) }
-that        <- function(from)                  { .foaas("that", from) }
-everything  <- function(from)                  { .foaas("everything", from) }
-everyone    <- function(from)                  { .foaas("everyone", from) }
-donut       <- function(name, from)            { .foaas("donut", name, from) }
-shakespeare <- function(name, from)            { .foaas("shakespeare", name, from) }
-linus       <- function(name, from)            { .foaas("linus", name, from) }
-king        <- function(name, from)            { .foaas("king", name, from) }
+off         <- function(name, from=.from())    { .foaas("off", name, from) }
+you         <- function(name, from=.from())    { .foaas("you", name, from) }
+this        <- function(from=.from())          { .foaas("this", from) }
+that        <- function(from=.from())          { .foaas("that", from) }
+everything  <- function(from=.from())          { .foaas("everything", from) }
+everyone    <- function(from=.from())          { .foaas("everyone", from) }
+donut       <- function(name, from=.from())    { .foaas("donut", name, from) }
+shakespeare <- function(name, from=.from())    { .foaas("shakespeare", name, from) }
+linus       <- function(name, from=.from())    { .foaas("linus", name, from) }
+king        <- function(name, from=.from())    { .foaas("king", name, from) }
 pink        <- function(name)                  { .foaas("pink", name) }
 life        <- function(name)                  { .foaas("life", name) }
-chainsaw    <- function(name, from)            { .foaas("chainsaw", name, from) }
-outside     <- function(name, from)            { .foaas("outside", name, from) }
-thanks      <- function(from)                  { .foaas("thanks", from) }
-flying      <- function(from)                  { .foaas("flying", from) }
-fascinating <- function(from)                  { .foaas("fascinating", from) }
-madison     <- function(name, from)            { .foaas("madison", name, from) }
-cool        <- function(from)                  { .foaas("cool", from) }
-field       <- function(name, from, reference) { .foaas("field", name, from, reference) }
-nugget      <- function(name, from)            { .foaas("nugget", name, from) }
-yoda        <- function(name, from)            { .foaas("yoda", name, from) }
-ballmer     <- function(name, company, from)   { .foaas("ballmer", name, company, from) }
-what        <- function(from)                  { .foaas("what", from) }
-because     <- function(from)                  { .foaas("because", from) }
-caniuse     <- function(tool, from)            { .foaas("caniuse", tool, from) }
-bye         <- function(from)                  { .foaas("bye", from) }
-diabetes    <- function(from)                  { .foaas("diabetes", from) }
-bus         <- function(from)                  { .foaas("bus", from) }
+chainsaw    <- function(name, from=.from())    { .foaas("chainsaw", name, from) }
+outside     <- function(name, from=.from())    { .foaas("outside", name, from) }
+thanks      <- function(from=.from())          { .foaas("thanks", from) }
+flying      <- function(from=.from())          { .foaas("flying", from) }
+fascinating <- function(from=.from())          { .foaas("fascinating", from) }
+madison     <- function(name, from=.from())    { .foaas("madison", name, from) }
+cool        <- function(from=.from())          { .foaas("cool", from) }
+field       <- function(name, from=.from(), reference)
+                                               { .foaas("field", name, from, reference) }
+nugget      <- function(name, from=.from())    { .foaas("nugget", name, from) }
+yoda        <- function(name, from=.from())    { .foaas("yoda", name, from) }
+ballmer     <- function(name, company, from=.from())
+                                               { .foaas("ballmer", name, company, from) }
+what        <- function(from=.from())          { .foaas("what", from) }
+because     <- function(from=.from())          { .foaas("because", from) }
+caniuse     <- function(tool, from=.from())    { .foaas("caniuse", tool, from) }
+bye         <- function(from=.from())          { .foaas("bye", from) }
+diabetes    <- function(from=.from())          { .foaas("diabetes", from) }
+bus         <- function(from=.from())          { .foaas("bus", from) }
 ## catch-all 
-thing       <- function(name, from)            { .foaas(name, from) }
+thing       <- function(name, from=.from())    { .foaas(name, from) }
 
