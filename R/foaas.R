@@ -67,6 +67,8 @@ caniuse     <- function(tool, from=.from())    { .foaas("caniuse", tool, from) }
 bye         <- function(from=.from())          { .foaas("bye", from) }
 diabetes    <- function(from=.from())          { .foaas("diabetes", from) }
 bus         <- function(from=.from())          { .foaas("bus", from) }
+bus         <- function(from=.from())          { .foaas("bus", from) }
+xmas        <- function(name, from=.from())    { .foaas("xmas", name, from) }
 ## catch-all 
 thing       <- function(name, from=.from())    { .foaas(name, from) }
 

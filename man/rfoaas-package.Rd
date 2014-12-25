@@ -32,6 +32,7 @@
 \alias{bye}
 \alias{diabetes}
 \alias{bus}
+\alias{xmas}
 \alias{thing}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -69,6 +70,7 @@
   diabetes(from)
   bus(from)
   thing(name, from)
+  xmas(name, from)
 
   version()
   operations()
