@@ -17,5 +17,5 @@ Dirk Eddelbuettel
 ## License
 
 GPL (>= 2) as most of my code though a case could be made for aligning with
-the [DWTFYWT](https://github.com/tomdionysus/foaas/blob/master/LICENSE)
-license that the [FOAAS code](https://github.com/tomdionysus/foaas/) is under.
+the [WTFPL](http://www.wtfpl.net/) license that the
+[FOAAS code](https://github.com/tomdionysus/foaas/) is under. 
