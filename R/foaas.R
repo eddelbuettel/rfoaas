@@ -21,7 +21,8 @@
     req <- URLencode(paste(..., sep="/"))     	         	# collate arguments and encode
     con <- url(paste0("http://foaas.herokuapp.com/", req)) 	# form url and create connection
     res <- readLines(con, n=n, warn=FALSE)       		# read one line from connection
-    close(con)
+    close(con)                                                  # clean connection
+    Encoding(res) <- "UTF-8"    				# server-side is UTF-8, needed on Windows 
     res
 }
 

@@ -1,3 +1,9 @@
+2014-12-28  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R (.foaas): Set UTF-8 encoding on response; appears to be
+	needed only "the leading consumer brand" OS but does not hurt as
+	FOAAS encodes its replies in UTF-8 anyway (cf lib/server.coffee)
+
 2014-12-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Version 0.0.4.20141225 [as upstream does not increment
