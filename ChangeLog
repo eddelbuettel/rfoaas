@@ -4,6 +4,8 @@
 	needed only "the leading consumer brand" OS but does not hurt as
 	FOAAS encodes its replies in UTF-8 anyway (cf lib/server.coffee)
 
+	* man/rfoaas-package.Rd: Updated accordingly
+
 2014-12-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Version 0.0.4.20141225 [as upstream does not increment
