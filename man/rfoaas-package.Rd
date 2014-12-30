@@ -117,7 +117,7 @@
 }
 \author{Dirk Eddelbuettel}
 \examples{
-\dontrun{                   # as we need a needwork connection
+\dontrun{                   # as we need a network connection
 
     ## returns current API version
     version()
