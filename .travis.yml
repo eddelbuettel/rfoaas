@@ -9,10 +9,13 @@ env:
   global:
     - RunFOAASTests=yes
 
-before_script:
+before_install:
   - curl -OL http://raw.github.com/eddelbuettel/r-travis/master/scripts/travis-tool.sh
   - chmod 755 ./travis-tool.sh
   - ./travis-tool.sh bootstrap
+
+install:
+  - ./travis-tool.sh install_r httr
 
 script: 
   - ./travis-tool.sh run_tests
