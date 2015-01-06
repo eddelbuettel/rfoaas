@@ -1,0 +1,135 @@
+
+R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet"
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ##  runTestsAgainstFOOAS --- simple Continuous Integration tests
+> ##
+> ##  Copyright (C) 2015  Dirk Eddelbuettel <edd@debian.org>
+> ##
+> ##  This file is part of rfoaas
+> ##
+> ##  rfoaas is free software: you can redistribute it and/or modify
+> ##  it under the terms of the GNU General Public License as published by
+> ##  the Free Software Foundation, either version 2 of the License, or
+> ##  (at your option) any later version.
+> ##
+> ##  rfoaas is distributed in the hope that it will be useful,
+> ##  but WITHOUT ANY WARRANTY; without even the implied warranty of
+> ##  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+> ##  GNU General Public License for more details.
+> ##
+> ##  You should have received a copy of the GNU General Public License
+> ##  along with rfoaas.  If not, see <http://www.gnu.org/licenses/>.
+> 
+> ## By default, do not run the tests
+> ## which also means do not run on CRAN
+> runTests <- FALSE
+> 
+> ## Use the Travis / GitHub integrations as we set this
+> ## environment variable to "yes" in .travis.yml
+> ##
+> ## Set this variable manually if you want to run the tests
+> ##
+> if (Sys.getenv("RunFOAASTests=yes") == "yes") runTests <- TRUE
+> 
+> ## Also run the tests when building on Dirk's box, even whem
+> ## the environment variable is not set
+> if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
+> 
+> if (runTests) {
++ 
++     library(rfoaas)
++ 
++     ## placeholders
++     name      <- "Someone"
++     from      <- "Me"
++     reference <- "Something somewhere"
++     company   <- "XYZ Corp"
++     tool      <- "Some magic thing"
++ 
++ 
++     print(off         (name=name, from=from)    )
++     #print(you         (name=name)          )
++     print(this        (from=from)          )
++     print(that        (from=from)          )
++     print(everything  (from=from)          )
++     print(everyone    (from=from)          )
++     print(donut       (name=name, from=from)    )
++     print(shakespeare (name=name, from=from)    )
++     print(linus       (name=name, from=from)    )
++     print(king        (name=name, from=from)    )
++     print(pink        (name=name)                  )
++     print(life        (name=name)                  )
++     print(chainsaw    (name=name, from=from)    )
++     print(outside     (name=name, from=from)    )
++     print(thanks      (from=from)          )
++     print(flying      (from=from)          )
++     print(fascinating (from=from)          )
++     print(madison     (name=name, from=from)    )
++     print(cool        (from=from)          )
++     print(field       (name=name, from=from, reference=reference))
++ 
++     print(nugget      (name=name, from=from)    )
++     print(yoda        (name=name, from=from)    )
++     print(ballmer     (name=name, company=company, from=from))
++     
++     print(what        (from=from)          )
++     print(because     (from=from)          )
++     print(caniuse     (tool=tool, from=from)    )
++     print(bye         (from=from)          )
++     print(diabetes    (from=from)          )
++     print(bus         (from=from)          )
++     print(xmas        (name=name, from=from)    )
++     
++     print(thing       (name=name, from=from)    )
++ 
++     invisible(NULL)
++ }
+[1] "Fuck off, Someone. - Me"
+[1] "Fuck this. - Me"
+[1] "Fuck that. - Me"
+[1] "Fuck everything. - Me"
+[1] "Everyone can go and fuck off. - Me"
+[1] "Someone, go and take a flying fuck at a rolling donut. - Me"
+[1] "Someone, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - Me"
+[1] "Someone, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - Me"
+[1] "Oh fuck off, just really fuck off you total dickface. Christ Someone, you are fucking thick. - Me"
+[1] "Well, Fuck me pink. - Someone"
+[1] "Fuck my life. - Someone"
+[1] "Fuck me gently with a chainsaw, Someone. Do I look like Mother Teresa? - Me"
+[1] "Someone, why don't you go outside and play hide-and-go-fuck-yourself? - Me"
+[1] "Fuck you very much. - Me"
+[1] "I don't give a flying fuck. - Me"
+[1] "Fascinating story, in what chapter do you shut the fuck up? - Me"
+[1] "What you've just said is one of the most insanely idiotic things I have ever heard, Someone. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points Someone, and may God have mercy on your soul. - Me"
+[1] "Cool story, bro. - Me"
+[1] "And Someone said unto Me, 'Verily, cast thine eyes upon the field in which I grow my fucks', and Me gave witness unto the field, and saw that it was barren. - Something somewhere"
+[1] "Well Someone, aren't you a shining example of a rancid fuck-nugget. - Me"
+[1] "Fuck off, you must, Someone. - Me"
+[1] "Fucking Someone is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill XYZ Corp. - Me"
+[1] "What the fuck‽ - Me"
+[1] "Why? Because Fuck you, that's why. - Me"
+[1] "Can you use Some magic thing? Fuck no! - Me"
+[1] "Fuckity bye! - Me"
+[1] "I'd love to stop and chat to you but I'd rather have type 2 diabetes. - Me"
+[1] "Fuck bus. - Me"
+[1] "Merry Fucking Christmas, Someone. - Me"
+[1] "Fuck Someone. - Me"
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  1.135   0.044   3.861 
