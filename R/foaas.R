@@ -18,12 +18,18 @@
 ##  along with rfoaas.  If not, see <http://www.gnu.org/licenses/>.
 
 .foaas <- function(..., n=1) {
-    req <- URLencode(paste(..., sep="/"))     	         	# collate arguments and encode
-    con <- url(paste0("http://foaas.herokuapp.com/", req)) 	# form url and create connection
-    res <- readLines(con, n=n, warn=FALSE)       		# read one line from connection
-    close(con)                                                  # clean connection
-    Encoding(res) <- "UTF-8"    				# server-side is UTF-8, needed on Windows 
-    res
+    #req <- URLencode(paste(..., sep="/"))     	         	# collate arguments and encode
+    #con <- url(paste0("http://foaas.herokuapp.com/", req)) 	# form url and create connection
+    #res <- readLines(con, n=n, warn=FALSE)       		# read one line from connection
+    #close(con)                                                 # clean connection
+    #Encoding(res) <- "UTF-8"    				# server-side is UTF-8, needed on Windows 
+    #res
+
+    srv <- "http://foaas.herokuapp.com"
+    req <- URLencode(paste(srv, ..., sep="/"))     	        # collate arguments and encode
+    res <- GET(req, accept("text/plain"))
+    txt <- content(res, "text", encoding="utf-8")
+    txt
 }
 
 .from <- function() {
@@ -38,7 +44,7 @@ version     <- function()                      { .foaas("version") }
 operations  <- function()                      { .foaas("operations", n=-1) }
 
 off         <- function(name, from=.from())    { .foaas("off", name, from) }
-you         <- function(name, from=.from())    { .foaas("you", name, from) }
+#you         <- function(name, from=.from())    { .foaas("you", name, from) }
 this        <- function(from=.from())          { .foaas("this", from) }
 that        <- function(from=.from())          { .foaas("that", from) }
 everything  <- function(from=.from())          { .foaas("everything", from) }
@@ -67,7 +73,6 @@ because     <- function(from=.from())          { .foaas("because", from) }
 caniuse     <- function(tool, from=.from())    { .foaas("caniuse", tool, from) }
 bye         <- function(from=.from())          { .foaas("bye", from) }
 diabetes    <- function(from=.from())          { .foaas("diabetes", from) }
-bus         <- function(from=.from())          { .foaas("bus", from) }
 bus         <- function(from=.from())          { .foaas("bus", from) }
 xmas        <- function(name, from=.from())    { .foaas("xmas", name, from) }
 ## catch-all 

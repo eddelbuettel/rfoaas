@@ -4,7 +4,7 @@
 \alias{version}
 \alias{operations}
 \alias{off}
-\alias{you}
+%\alias{you}
 \alias{this}
 \alias{that}
 \alias{everything}
@@ -42,7 +42,7 @@
 }
 \usage{
   off(name, from)
-  you(name, from)
+%  you(name, from)
   this(from)
   that(from)
   everything(from)
@@ -117,7 +117,7 @@
 }
 \author{Dirk Eddelbuettel}
 \examples{
-\dontrun{                   # as we need a network connection
+\dontrun{                   # as we need a needwork connection
 
     ## returns current API version
     version()
