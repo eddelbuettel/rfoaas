@@ -1,3 +1,15 @@
+2015-01-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/rfoaas.R: Switch to using GET() from httr, at leasy while
+	behaviour at foaas.com is changed and requires explicit text/plain
+
+	* DESCRIPTION: Add Imports: httr
+	* NAMESPACE: Add three imports from httr
+
+	* .travis.yml: Add Travis support
+	* tests/runTestsAgainstFOAAS.R: Simple test script
+	* tests/runTestsAgainstFOAAS.Rout.save: Reference output
+
 2014-12-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Version 0.0.5 in sync with upstream
