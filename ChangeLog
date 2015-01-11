@@ -1,7 +1,9 @@
 2015-01-11  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION: Version 0.1.1 in sync with upstream
+
 	* tests/runTestsAgainstFOAAS.R: Rework tests as sequence of explicit
-	stopifnot() comparisons against (known) response
+	stopifnot() comparisons against (known) responses
 	* tests/runTestsAgainstFOAAS.Rout.save: Removed, as we run the test
 	script in two possible execution paths we cannot have one reference
 
