@@ -1,4 +1,4 @@
-# rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.png)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat-square)](http://www.gnu.org/licenses/gpl-2.0.html)
+# rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.png)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
 
 ## What
 
