@@ -1,3 +1,8 @@
+2015-01-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R (you): Re-enable you() now that upstread fixed it
+	* man/rfoaas-package.Rd: Ditto
+
 2015-01-05  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/rfoaas.R: Switch to using GET() from httr, at leasy while
