@@ -43,42 +43,42 @@ if (runTests) {
     company   <- "XYZ Corp"
     tool      <- "Some magic thing"
 
-
-    print(off         (name=name, from=from)    )
-    #print(you         (name=name)          )
-    print(this        (from=from)          )
-    print(that        (from=from)          )
-    print(everything  (from=from)          )
-    print(everyone    (from=from)          )
-    print(donut       (name=name, from=from)    )
-    print(shakespeare (name=name, from=from)    )
-    print(linus       (name=name, from=from)    )
-    print(king        (name=name, from=from)    )
-    print(pink        (name=name)                  )
-    print(life        (name=name)                  )
-    print(chainsaw    (name=name, from=from)    )
-    print(outside     (name=name, from=from)    )
-    print(thanks      (from=from)          )
-    print(flying      (from=from)          )
-    print(fascinating (from=from)          )
-    print(madison     (name=name, from=from)    )
-    print(cool        (from=from)          )
-    print(field       (name=name, from=from, reference=reference))
-
-    print(nugget      (name=name, from=from)    )
-    print(yoda        (name=name, from=from)    )
-    print(ballmer     (name=name, company=company, from=from))
+    stopifnot(off         (name=name, from=from)  == "Fuck off, Someone. - Me" ) 
+    stopifnot(you         (name=name, from=from)  == "Fuck you, Someone. - Me" )
+    stopifnot(this        (from=from)             == "Fuck this. - Me" )
+    stopifnot(that        (from=from)             == "Fuck that. - Me" )
+    stopifnot(everything  (from=from)             == "Fuck everything. - Me" )
+    stopifnot(everyone    (from=from)             == "Everyone can go and fuck off. - Me" )
+    stopifnot(donut       (name=name, from=from)  == "Someone, go and take a flying fuck at a rolling donut. - Me" )
+    stopifnot(shakespeare (name=name, from=from)  == "Someone, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - Me" )
+    stopifnot(linus       (name=name, from=from)  == "Someone, there aren't enough swear-words in the English language, so now I'll have to call you perkeleen vittupää just to express my disgust and frustration with this crap. - Me"  )
+    stopifnot(king        (name=name, from=from)  == "Oh fuck off, just really fuck off you total dickface. Christ Someone, you are fucking thick. - Me"  )
+    stopifnot(pink        (name=name)             == "Well, Fuck me pink. - Someone" )
+    stopifnot(life        (name=name)             == "Fuck my life. - Someone" )
+    stopifnot(chainsaw    (name=name, from=from)  == "Fuck me gently with a chainsaw, Someone. Do I look like Mother Teresa? - Me" )
+    stopifnot(outside     (name=name, from=from)  == "Someone, why don't you go outside and play hide-and-go-fuck-yourself? - Me" )
+    stopifnot(thanks      (from=from)             == "Fuck you very much. - Me" )
+    stopifnot(flying      (from=from)             == "I don't give a flying fuck. - Me" )
+    stopifnot(fascinating (from=from)             == "Fascinating story, in what chapter do you shut the fuck up? - Me" )
+    stopifnot(madison     (name=name, from=from)  == "What you've just said is one of the most insanely idiotic things I have ever heard, Someone. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points Someone, and may God have mercy on your soul. - Me" )
+    stopifnot(cool        (from=from)             == "Cool story, bro. - Me" )
+    stopifnot(field       (name=name, from=from,
+                           reference=reference)   == "And Someone said unto Me, 'Verily, cast thine eyes upon the field in which I grow my fucks', and Me gave witness unto the field, and saw that it was barren. - Something somewhere")
     
-    print(what        (from=from)          )
-    print(because     (from=from)          )
-    print(caniuse     (tool=tool, from=from)    )
-    print(bye         (from=from)          )
-    print(diabetes    (from=from)          )
-    print(bus         (from=from)          )
-    print(xmas        (name=name, from=from)    )
+    stopifnot(nugget      (name=name, from=from)  == "Well Someone, aren't you a shining example of a rancid fuck-nugget. - Me" )
+    stopifnot(yoda        (name=name, from=from)  == "Fuck off, you must, Someone. - Me" )
+    stopifnot(ballmer     (name=name, company=company,
+                           from=from)             == "Fucking Someone is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill XYZ Corp. - Me")
     
-    print(thing       (name=name, from=from)    )
-
-    invisible(NULL)
+    stopifnot(what        (from=from)             == "What the fuck‽ - Me" )
+    stopifnot(because     (from=from)             == "Why? Because Fuck you, that's why. - Me" )
+    stopifnot(caniuse     (tool=tool, from=from)  == "Can you use Some magic thing? Fuck no! - Me" )
+    stopifnot(bye         (from=from)             == "Fuckity bye! - Me" )
+    stopifnot(diabetes    (from=from)             == "I'd love to stop and chat to you but I'd rather have type 2 diabetes. - Me" )
+    stopifnot(bus         (from=from)             == "Fuck bus. - Me" )
+    stopifnot(xmas        (name=name, from=from)  == "Merry Fucking Christmas, Someone. - Me" )
+    
+    stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me" )
+    
 }
 
