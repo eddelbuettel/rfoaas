@@ -18,13 +18,18 @@
 ##  along with rfoaas.  If not, see <http://www.gnu.org/licenses/>.
 
 .foaas <- function(..., n=1) {
+
+    ## -- The following used to work when foaas.com was running with text/plain in default
+    ##
     #req <- URLencode(paste(..., sep="/"))     	         	# collate arguments and encode
     #con <- url(paste0("http://foaas.herokuapp.com/", req)) 	# form url and create connection
     #res <- readLines(con, n=n, warn=FALSE)       		# read one line from connection
     #close(con)                                                 # clean connection
     #Encoding(res) <- "UTF-8"    				# server-side is UTF-8, needed on Windows 
     #res
-
+    ##
+    ## -- but now we have to explicitly request it via accept headers, so we need http::GET
+    
     srv <- "http://foaas.herokuapp.com"
     req <- URLencode(paste(srv, ..., sep="/"))     	        # collate arguments and encode
     res <- GET(req, accept("text/plain"))
@@ -44,7 +49,7 @@ version     <- function()                      { .foaas("version") }
 operations  <- function()                      { .foaas("operations", n=-1) }
 
 off         <- function(name, from=.from())    { .foaas("off", name, from) }
-#you         <- function(name, from=.from())    { .foaas("you", name, from) }
+you         <- function(name, from=.from())    { .foaas("you", name, from) }
 this        <- function(from=.from())          { .foaas("this", from) }
 that        <- function(from=.from())          { .foaas("that", from) }
 everything  <- function(from=.from())          { .foaas("everything", from) }

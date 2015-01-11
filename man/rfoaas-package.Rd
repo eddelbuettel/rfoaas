@@ -4,7 +4,7 @@
 \alias{version}
 \alias{operations}
 \alias{off}
-%\alias{you}
+\alias{you}
 \alias{this}
 \alias{that}
 \alias{everything}
@@ -42,7 +42,7 @@
 }
 \usage{
   off(name, from)
-%  you(name, from)
+  you(name, from)
   this(from)
   that(from)
   everything(from)
