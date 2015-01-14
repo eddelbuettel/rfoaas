@@ -1,6 +1,6 @@
 ##  rfoaas -- An R interface to the FOAAS service
 ##
-##  Copyright (C) 2014 Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2014 - 2015  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -80,6 +80,7 @@ bye         <- function(from=.from())          { .foaas("bye", from) }
 diabetes    <- function(from=.from())          { .foaas("diabetes", from) }
 bus         <- function(from=.from())          { .foaas("bus", from) }
 xmas        <- function(name, from=.from())    { .foaas("xmas", name, from) }
+awesome     <- function(from=.from())          { .foaas("awesome", from) }
 ## catch-all 
 thing       <- function(name, from=.from())    { .foaas(name, from) }
 

@@ -77,6 +77,7 @@ if (runTests) {
     stopifnot(diabetes    (from=from)             == "I'd love to stop and chat to you but I'd rather have type 2 diabetes. - Me" )
     stopifnot(bus         (from=from)             == "Fuck bus. - Me" )
     stopifnot(xmas        (name=name, from=from)  == "Merry Fucking Christmas, Someone. - Me" )
+    stopifnot(awesome     (from=from)             == "This is Fucking Awesome. - Me" )
     
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me" )
     
