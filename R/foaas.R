@@ -30,7 +30,8 @@
     ##
     ## -- but now we have to explicitly request it via accept headers, so we need http::GET
     
-    srv <- "http://foaas.herokuapp.com"
+    #srv <- "http://foaas.herokuapp.com"
+    srv <- "http://foaas.com"
     req <- URLencode(paste(srv, ..., sep="/"))     	        # collate arguments and encode
     res <- GET(req, accept("text/plain"))
     txt <- content(res, "text", encoding="utf-8")
