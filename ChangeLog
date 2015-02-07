@@ -1,9 +1,12 @@
 2015-02-07  Dirk Eddelbuettel  <edd@debian.org>
 
-	* R/foaas.R (.foaas): remove unused argument 'n'
+	* DESCRIPTION (Version): Version 0.1.3 in sync with upstream
 
 	* R/foaas.R (.filter): Add support for filter argument
 	* R/foaas.R (.foaas): Use filter argument: none or soundcloud
+	* man/rfoaas-package.Rd: Document filter
+
+	* R/foaas.R (.foaas): remove unused argument 'n'
 
 2015-01-17  Dirk Eddelbuettel  <edd@debian.org>
 
