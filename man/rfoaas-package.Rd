@@ -42,45 +42,53 @@
   solution. This packge provides an R interface.
 }
 \usage{
-  off(name, from)
-  you(name, from)
-  this(from)
-  that(from)
-  everything(from)
-  everyone(from)
-  donut(name, from)
-  shakespeare(name, from)
-  linus(name, from)
-  king(name, from)
-  pink(name)
-  life(name)
-  chainsaw(name, from)
-  outside(name, from)
-  thanks(from)
-  fascinating(from)
-  madison(name, from)
-  cool(from)
-  field(name, from, reference)
-  nugget(name, from)
-  yoda(name, from)
-  ballmer(name, company, from)
-  what(from)
-  because(from)
-  caniuse(tool, from)
-  bye(from)
-  diabetes(from)
-  bus(from)
-  xmas(name, from)
-  awesome(from)
+  off(name, from, filter)
+  you(name, from, filter)
+  this(from, filter)
+  that(from, filter)
+  everything(from, filter)
+  everyone(from, filter)
+  donut(name, from, filter)
+  shakespeare(name, from, filter)
+  linus(name, from, filter)
+  king(name, from, filter)
+  pink(name, filter)
+  life(name, filter)
+  chainsaw(name, from, filter)
+  outside(name, from, filter)
+  thanks(from, filter)
+  fascinating(from, filter)
+  madison(name, from, filter)
+  cool(from, filter)
+  field(name, from, reference, filter)
+  nugget(name, from, filter)
+  yoda(name, from, filter)
+  ballmer(name, company, from, filter)
+  what(from, filter)
+  because(from, filter)
+  caniuse(tool, from, filter)
+  bye(from, filter)
+  diabetes(from, filter)
+  bus(from, filter)
+  xmas(name, from, filter)
+  awesome(from, filter)
 
-  thing(name, from)
+  thing(name, from, filter)
 
   version()
   operations()
 }
 \arguments{
   \item{name}{The name to whom the message is directed.}
-  \item{from}{The name of the message requester.}
+  \item{from}{The name of the message requester. If omitted, the value
+  of the (optional) global variable \sQuote{rfoaasFrom} is used, and if
+  that variable is missing or unset, a default is filled-in based on the
+  user name obtained via \code{\link{Sys.info}}}. 
+  \item{filter}{An optional filter. If unset, the (optional) global
+  variable \sQuote{rfoaasFilter} can provide a default, and a fallback
+  value of \sQuote{none}. Currently the only other permitted value is
+  \sQuote{shoutcloud} to enable filtering via the magnificient
+  \url{http://shoutcloud.io} service.}
   \item{reference}{An additional reference in the message.}
   \item{company}{A company reference in the message.}
   \item{tool}{A company reference in the message.}
@@ -117,6 +125,13 @@
   default value: either an R \code{options()} variable accessible via
   the key \code{rfoaasFrom}, or the value of \code{Sys.info()["user"]}
   as fallback.
+
+  The \code{filter} argument uses an internal helper function to supply a
+  default value: either an R \code{options()} variable accessible via
+  the key \code{rfoaasFilter}, or a default of \sQuote{none}. Currently,
+  the only other permissible value is \sQuote{shoutcloud} to enable
+  filtering via the magnificient \url{http://shoutcloud.io} service.
+
 }
 \author{Dirk Eddelbuettel}
 \examples{
