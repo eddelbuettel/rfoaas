@@ -19,7 +19,7 @@ standard profanity-issuing access points:
 ```{.r}
 R> off("Tom", "Harry")
 [1] "Fuck off, Tom. - Harry"
-```{.r}
+```
 
 Since version 0.1.6, internationalization is taken more seriously, so if you
 want to express the preceeding message even more lovingly in Finnish, you can
