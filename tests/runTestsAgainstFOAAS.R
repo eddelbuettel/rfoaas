@@ -43,6 +43,7 @@ if (runTests) {
     company   <- "XYZ Corp"
     tool      <- "Some magic thing"
 
+    ## basic operations
     stopifnot(off         (name=name, from=from)  == "Fuck off, Someone. - Me" ) 
     stopifnot(you         (name=name, from=from)  == "Fuck you, Someone. - Me" )
     stopifnot(this        (from=from)             == "Fuck this. - Me" )
@@ -80,6 +81,16 @@ if (runTests) {
     stopifnot(awesome     (from=from)             == "This is Fucking Awesome. - Me" )
     
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me" )
+    
+
+    ## shoutcloud
+    stopifnot(off         (name=name, from=from, filter="shoutcloud")  == "FUCK OFF, SOMEONE. - ME" ) 
+
+    ## language
+    stopifnot(off         (name=name, from=from, language="de")  == "Verpiss dich, jemand. - Me")
+    
+    ## shoutcloud and language
+    stopifnot(off         (name=name, from=from, filter="shoutcloud", language="de")  == "VERPISS DICH, JEMAND. - ME")
     
 }
 
