@@ -32,11 +32,21 @@
     
     #srv <- "http://foaas.herokuapp.com"
     srv <- "http://foaas.com"
-    req <- URLencode(paste(srv, ..., sep="/"))     	        # collate arguments and encode
-    req <- paste0(req, "?i18n", ifelse(language=="none", "", paste0("=", language)))
-    req <- paste0(req, switch(filter,
-                              "none"="",
-                              "shoutcloud"="&shoutcloud"))
+    req <- paste(srv, ..., sep="/")		     	        # collate normal arguments 
+
+    ## deal with optional arguments by test and conditional appends
+    supargs <- c(ifelse(language=="none", "", paste0("i18n=", language)),
+                 switch(filter,
+                        "none" = "",
+                        "shoutcloud" = "shoutcloud"))
+    if (any(supargs != "")) {           			# if we have arguments
+        supargs <- paste(supargs, collapse="&")                 # collate them, but ...
+        supargs <- gsub("&$", "", gsub("^&", "", supargs)) 	# ... nuke leading or trailing '&'
+        req <- paste(req, supargs, sep="?")                     # and append
+    }
+
+    req <- URLencode(req)					# encode as a URL just in case
+    
     res <- GET(req, accept("text/plain"))
     txt <- content(res, "text", encoding="utf-8")
     txt
@@ -95,6 +105,9 @@ diabetes    <- function(from=.from(), filter=.filter(), language=.language())   
 bus         <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("bus", from, filter=filter, language=language) }
 xmas        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("xmas", name, from, filter=filter, language=language) }
 awesome     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("awesome", from, filter=filter, language=language) }
+tucker      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("tucker", from, filter=filter, language=language) }
+bucket      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("bucket", from, filter=filter, language=language) }
+
 ## catch-all 
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
