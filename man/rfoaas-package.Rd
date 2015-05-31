@@ -34,6 +34,8 @@
 \alias{bus}
 \alias{xmas}
 \alias{awesome}
+\alias{tucker}
+\alias{bucket}
 \alias{thing}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -42,38 +44,40 @@
   solution. This packge provides an R interface.
 }
 \usage{
-  off(name, from, filter)
-  you(name, from, filter)
-  this(from, filter)
-  that(from, filter)
-  everything(from, filter)
-  everyone(from, filter)
-  donut(name, from, filter)
-  shakespeare(name, from, filter)
-  linus(name, from, filter)
-  king(name, from, filter)
-  pink(name, filter)
-  life(name, filter)
-  chainsaw(name, from, filter)
-  outside(name, from, filter)
-  thanks(from, filter)
-  fascinating(from, filter)
-  madison(name, from, filter)
-  cool(from, filter)
-  field(name, from, reference, filter)
-  nugget(name, from, filter)
-  yoda(name, from, filter)
-  ballmer(name, company, from, filter)
-  what(from, filter)
-  because(from, filter)
-  caniuse(tool, from, filter)
-  bye(from, filter)
-  diabetes(from, filter)
-  bus(from, filter)
-  xmas(name, from, filter)
-  awesome(from, filter)
+  off(name, from, filter, language)
+  you(name, from, filter, language)
+  this(from, filter, language)
+  that(from, filter, language)
+  everything(from, filter, language)
+  everyone(from, filter, language)
+  donut(name, from, filter, language)
+  shakespeare(name, from, filter, language)
+  linus(name, from, filter, language)
+  king(name, from, filter, language)
+  pink(name, filter, language)
+  life(name, filter, language)
+  chainsaw(name, from, filter, language)
+  outside(name, from, filter, language)
+  thanks(from, filter, language)
+  fascinating(from, filter, language)
+  madison(name, from, filter, language)
+  cool(from, filter, language)
+  field(name, from, reference, filter, language)
+  nugget(name, from, filter, language)
+  yoda(name, from, filter, language)
+  ballmer(name, company, from, filter, language)
+  what(from, filter, language)
+  because(from, filter, language)
+  caniuse(tool, from, filter, language)
+  bye(from, filter, language)
+  diabetes(from, filter, language)
+  bus(from, filter, language)
+  xmas(name, from, filter, language)
+  awesome(from, filter, language)
+  tucker(from, filter, language)
+  bucket(from, filter, language)
 
-  thing(name, from, filter)
+  thing(name, from, filter, language)
 
   version()
   operations()
@@ -89,6 +93,10 @@
   value of \sQuote{none}. Currently the only other permitted value is
   \sQuote{shoutcloud} to enable filtering via the magnificient
   \url{http://shoutcloud.io} service.}
+  \item{language}{An optional filter argument. If set, the message is
+  internationalized to the given (optional) language stated as the the
+  usual two-character code such as \sQuote{fr}, \sQuote{de},
+  \sQuote{es}}. 
   \item{reference}{An additional reference in the message.}
   \item{company}{A company reference in the message.}
   \item{tool}{A company reference in the message.}
