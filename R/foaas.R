@@ -64,37 +64,37 @@ version     <- function()                      { .foaas("version") }
 ## As this returns JSON, use RJSONIO or jsonlite to deal with the result
 operations  <- function()                      { .foaas("operations") }
 
-off         <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("off", name, from, filter=filter, language=language) }
-you         <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("you", name, from, filter=filter, language=language) }
-this        <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("this", from, filter=filter, language=language) }
-that        <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("that", from, filter=filter, language=language) }
-everything  <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("everything", from, filter=filter, language=language) }
-everyone    <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("everyone", from, filter=filter, language=language) }
-donut       <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("donut", name, from, filter=filter, language=language) }
-shakespeare <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("shakespeare", name, from, filter=filter, language=language) }
-linus       <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("linus", name, from, filter=filter, language=language) }
-king        <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("king", name, from, filter=filter, language=language) }
-pink        <- function(name, filter=.filter(), language=.language())                  { .foaas("pink", name, filter=filter, language=language) }
-life        <- function(name, filter=.filter(), language=.language())                  { .foaas("life", name, filter=filter, language=language) }
-chainsaw    <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("chainsaw", name, from, filter=filter, language=language) }
-outside     <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("outside", name, from, filter=filter, language=language) }
-thanks      <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("thanks", from, filter=filter, language=language) }
-flying      <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("flying", from, filter=filter, language=language) }
-fascinating <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("fascinating", from, filter=filter, language=language) }
-madison     <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("madison", name, from, filter=filter, language=language) }
-cool        <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("cool", from, filter=filter, language=language) }
+off         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("off", name, from, filter=filter, language=language) }
+you         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("you", name, from, filter=filter, language=language) }
+this        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("this", from, filter=filter, language=language) }
+that        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("that", from, filter=filter, language=language) }
+everything  <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("everything", from, filter=filter, language=language) }
+everyone    <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("everyone", from, filter=filter, language=language) }
+donut       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("donut", name, from, filter=filter, language=language) }
+shakespeare <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("shakespeare", name, from, filter=filter, language=language) }
+linus       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("linus", name, from, filter=filter, language=language) }
+king        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("king", name, from, filter=filter, language=language) }
+pink        <- function(name, filter=.filter(), language=.language())                              { .foaas("pink", name, filter=filter, language=language) }
+life        <- function(name, filter=.filter(), language=.language())                              { .foaas("life", name, filter=filter, language=language) }
+chainsaw    <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("chainsaw", name, from, filter=filter, language=language) }
+outside     <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("outside", name, from, filter=filter, language=language) }
+thanks      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("thanks", from, filter=filter, language=language) }
+flying      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("flying", from, filter=filter, language=language) }
+fascinating <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("fascinating", from, filter=filter, language=language) }
+madison     <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("madison", name, from, filter=filter, language=language) }
+cool        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("cool", from, filter=filter, language=language) }
 field       <- function(name, from=.from(), reference, filter=.filter(), language=.language())     { .foaas("field", name, from, reference, filter=filter, language=language) }
-nugget      <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("nugget", name, from, filter=filter, language=language) }
-yoda        <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("yoda", name, from, filter=filter, language=language) }
+nugget      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("nugget", name, from, filter=filter, language=language) }
+yoda        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("yoda", name, from, filter=filter, language=language) }
 ballmer     <- function(name, company, from=.from(), filter=.filter(), language=.language())       { .foaas("ballmer", name, company, from, filter=filter, language=language) }
-what        <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("what", from, filter=filter, language=language) }
-because     <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("because", from, filter=filter, language=language) }
-caniuse     <- function(tool, from=.from(), filter=.filter(), language=.language())    { .foaas("caniuse", tool, from, filter=filter, language=language) }
-bye         <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("bye", from, filter=filter, language=language) }
-diabetes    <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("diabetes", from, filter=filter, language=language) }
-bus         <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("bus", from, filter=filter, language=language) }
-xmas        <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas("xmas", name, from, filter=filter, language=language) }
-awesome     <- function(from=.from(), filter=.filter(), language=.language())          { .foaas("awesome", from, filter=filter, language=language) }
+what        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("what", from, filter=filter, language=language) }
+because     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("because", from, filter=filter, language=language) }
+caniuse     <- function(tool, from=.from(), filter=.filter(), language=.language())                { .foaas("caniuse", tool, from, filter=filter, language=language) }
+bye         <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("bye", from, filter=filter, language=language) }
+diabetes    <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("diabetes", from, filter=filter, language=language) }
+bus         <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("bus", from, filter=filter, language=language) }
+xmas        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("xmas", name, from, filter=filter, language=language) }
+awesome     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("awesome", from, filter=filter, language=language) }
 ## catch-all 
-thing       <- function(name, from=.from(), filter=.filter(), language=.language())    { .foaas(name, from, filter=filter, language=language) }
+thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
