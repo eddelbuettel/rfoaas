@@ -1,5 +1,7 @@
 2015-05-31  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version): Version 0.1.6 in sync with upstream
+
 	* R/foaas.R (.language): Add support for language argument
 	* R/foaas.R (.foaas): Use language argument for i18n
 
