@@ -46,7 +46,6 @@
     }
 
     req <- URLencode(req)					# encode as a URL just in case
-    
     res <- GET(req, accept("text/plain"))
     txt <- content(res, "text", encoding="utf-8")
     txt
@@ -107,6 +106,10 @@ xmas        <- function(name, from=.from(), filter=.filter(), language=.language
 awesome     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("awesome", from, filter=filter, language=language) }
 tucker      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("tucker", from, filter=filter, language=language) }
 bucket      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("bucket", from, filter=filter, language=language) }
+bday        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bday", name, from, filter=filter, language=language) }
+family.     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("family", from, filter=filter, language=language) }
+shutup      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("shutup", name, from, filter=filter, language=language) }
+zayn        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("zayn", name, from, filter=filter, language=language) }
 
 ## catch-all 
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }

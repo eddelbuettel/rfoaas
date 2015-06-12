@@ -36,6 +36,10 @@
 \alias{awesome}
 \alias{tucker}
 \alias{bucket}
+\alias{bday}
+\alias{family.}
+\alias{shutup}
+\alias{zayn}
 \alias{thing}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -76,7 +80,10 @@
   awesome(from, filter, language)
   tucker(from, filter, language)
   bucket(from, filter, language)
-
+  bday(name, from, filter, language)
+  family(from, filter, language)
+  shutup(name, from, filter, language)
+  zayn(name, from, filter, language)
   thing(name, from, filter, language)
 
   version()
