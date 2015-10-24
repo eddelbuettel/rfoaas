@@ -120,7 +120,6 @@
   \item{tool}{A company referenced in the message.}
   \item{do}{A activity referenced in the message.}
   \item{something}{An object referenced in the message.}
-  \item{behaviour}{An action referenced in the message.}
   
 }
 \value{
