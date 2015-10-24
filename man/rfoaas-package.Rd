@@ -42,7 +42,7 @@
 \alias{zayn}
 \alias{dalton}
 \alias{dosomething}
-\alias{off_with}
+%\alias{off_with}
 \alias{retard}
 \alias{thumbs}
 \alias{thing}
@@ -91,7 +91,7 @@
   zayn(from, filter, language)
   dalton(name, from, filter, language)
   dosomething(do, something, from, filter, language)
-  off_with(behaviour, from, filter, language)
+%  off_with(behaviour, from, filter, language)
   retard(from, filter, language)
   thumbs(name, from, filter, language)
 
