@@ -109,7 +109,7 @@ bucket      <- function(from=.from(), filter=.filter(), language=.language())   
 bday        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bday", name, from, filter=filter, language=language) }
 family_     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("family", from, filter=filter, language=language) }
 shutup      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("shutup", name, from, filter=filter, language=language) }
-zayn        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("zayn", name, from, filter=filter, language=language) }
+zayn        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("zayn", from, filter=filter, language=language) }
 dalton      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("dalton", name, from, filter=filter, language=language) }
 dosomething <- function(do, something, from=.from(), filter=.filter(), language=.language())       { .foaas("dosomething", do, something, from, filter=filter, language=language) }
 off_with    <- function(behaviour, from=.from(), filter=.filter(), language=.language())           { .foaas("off_with", behaviour, from, filter=filter, language=language) }
