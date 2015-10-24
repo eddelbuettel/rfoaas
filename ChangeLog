@@ -1,3 +1,19 @@
+2015-10-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version): Version 0.1.8 in sync with upstream
+	access points.  Filter functionality still does not seem to work.
+
+	* R/foaas.R (dalton): New function
+	* R/foaas.R (dosomething): New function
+	* R/foaas.R (off_with): New function
+	* R/foaas.R (retard): New function
+	* R/foaas.R (thumbs): New function
+
+	* man/rfoaas-package.Rd: Document language
+
+	* tests/runTestsAgainstFOAAS.R: Disabled tests against language and
+	shoutcloud filter which do not appear to work reliably upstream
+
 2015-05-31  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version): Version 0.1.6 in sync with upstream
