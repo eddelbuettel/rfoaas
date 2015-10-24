@@ -15,7 +15,6 @@
 
 	* R/foaas.R (dalton): New function
 	* R/foaas.R (dosomething): New function
-	* R/foaas.R (off_with): New function
 	* R/foaas.R (retard): New function
 	* R/foaas.R (thumbs): New function
 
