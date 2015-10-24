@@ -88,7 +88,7 @@
   bday(name, from, filter, language)
   family_(from, filter, language)
   shutup(name, from, filter, language)
-  zayn(name, from, filter, language)
+  zayn(from, filter, language)
   dalton(name, from, filter, language)
   dosomething(do, something, from, filter, language)
   off_with(behaviour, from, filter, language)
