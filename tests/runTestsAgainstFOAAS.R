@@ -44,6 +44,7 @@ if (runTests) {
     tool      <- "Some magic thing"
     do        <- "Get"
     something <- "Something"
+    reaction  <- "do not panic"
 
     ## basic operations
     stopifnot(off         (name=name, from=from)  == "Fuck off, Someone. - Me") 
@@ -88,6 +89,8 @@ if (runTests) {
     stopifnot(family_     (from=from)             == "Fuck you, your whole family, your pets, and your feces. - Me")
     stopifnot(shutup      (name=name, from=from)  == "Someone, shut the fuck up. - Me")
     stopifnot(zayn        (from=from)             == "Ask me if I give a motherfuck ?!! - Me")
+    stopifnot(keepcalm    (reaction=reaction,
+                           from=from)             == "Keep the fuck calm and do not panic! - Me")
     stopifnot(dalton      (name=name, from=from)  == "Someone: A fucking problem solving super-hero. - Me")
     stopifnot(dosomething (do=do, something=something,
                            from=from)             == "Get the fucking Something! - Me")

@@ -40,6 +40,7 @@
 \alias{family_}
 \alias{shutup}
 \alias{zayn}
+\alias{keepcalm}
 \alias{dalton}
 \alias{dosomething}
 %\alias{off_with}
@@ -89,6 +90,7 @@
   family_(from, filter, language)
   shutup(name, from, filter, language)
   zayn(from, filter, language)
+  keepcalm(reaction, from, filter, language)
   dalton(name, from, filter, language)
   dosomething(do, something, from, filter, language)
 %  off_with(behaviour, from, filter, language)
@@ -120,6 +122,7 @@
   \item{tool}{A company referenced in the message.}
   \item{do}{A activity referenced in the message.}
   \item{something}{An object referenced in the message.}
+  \item{reaction}{An activity referenced in the message.}
   
 }
 \value{

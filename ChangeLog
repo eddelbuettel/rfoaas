@@ -1,3 +1,11 @@
+2015-10-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version): Release 0.1.8.1
+
+	* R/foaas.R: Add keepcalm()
+	* man/foaas.Rd: Document keepcalm()
+	* tests/runTestsAgainstFOAAS.R: Test keepcalm()
+
 2015-10-24  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Date): Release 0.1.8
