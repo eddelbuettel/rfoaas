@@ -1,3 +1,10 @@
+2016-05-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R (.foaas): Return object is now of class 'rfoaas'
+	* R/foaas.R (print.rfoaas): Added print method
+	* man/rfoaas-package.Rd: Define print method
+	* NAMESPACE: Register print method
+
 2016-05-24  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/foaas.R: Added greed(), me() and mornin()

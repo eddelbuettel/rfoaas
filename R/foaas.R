@@ -1,6 +1,6 @@
 ##  rfoaas -- An R interface to the FOAAS service
 ##
-##  Copyright (C) 2014 - 2015  Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2014 - 2016  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -25,7 +25,7 @@
     #con <- url(paste0("http://foaas.herokuapp.com/", req)) 	# form url and create connection
     #res <- readLines(con, n=n, warn=FALSE)       		# read one line from connection
     #close(con)                                                 # clean connection
-    #Encoding(res) <- "UTF-8"    				# server-side is UTF-8, needed on Windows 
+    #Encoding(res) <- "UTF-8"    				# server-side is UTF-8 (on win)
     #res
     ##
     ## -- but now we have to explicitly request it via accept headers, so we need http::GET
@@ -41,14 +41,21 @@
                         "shoutcloud" = "shoutcloud"))
     if (any(supargs != "")) {           			# if we have arguments
         supargs <- paste(supargs, collapse="&")                 # collate them, but ...
-        supargs <- gsub("&$", "", gsub("^&", "", supargs)) 	# ... nuke leading or trailing '&'
+        supargs <- gsub("&$", "", gsub("^&", "", supargs)) 	# ... nuke leading/trailing '&'
         req <- paste(req, supargs, sep="?")                     # and append
     }
 
     req <- URLencode(req)					# encode as a URL just in case
     res <- GET(req, accept("text/plain"))
     txt <- content(res, "text", encoding="utf-8")
+    class(txt) <- "rfoaas"
     txt
+}
+
+print.rfoaas <- function(x, width = NULL, ...) {
+    if (is.null(width)) width <- 0.9 * getOption("width")
+    if (width < 10) stop("'width' must be greater than 10", call.=FALSE)
+    invisible(sapply(strwrap(x, width), cat, "\n"))
 }
 
 .from <- function() {

@@ -1,6 +1,7 @@
 \name{rfoaas-package}
 \alias{rfoaas-package}
 \alias{rfoaas}
+\alias{print.rfoaas}
 \alias{version}
 \alias{operations}
 \alias{off}
@@ -107,6 +108,9 @@
 
   version()
   operations()
+
+  \method{print}{rfoaas}(x, width = NULL, ...)
+
 }
 \arguments{
   \item{name}{The name to whom the message is directed.}
@@ -129,7 +133,10 @@
   \item{do}{A activity referenced in the message.}
   \item{something}{An object referenced in the message.}
   \item{reaction}{An activity referenced in the message.}
-  
+
+  \item{x}{Default object for \code{print} method}
+  \item{width}{Optional column width parameter}
+  \item{...}{Other optional arguments}
 }
 \value{
   For all (but one) queries, a text string with the request FOAAS

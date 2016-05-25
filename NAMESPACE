@@ -1,3 +1,6 @@
 exportPattern("^[[:alpha:]]+")
+
 importFrom("httr", "GET", "accept", "content")
 importFrom("utils", "URLencode")
+
+S3method("print", "rfoaas")
