@@ -117,6 +117,13 @@ dosomething <- function(do, something, from=.from(), filter=.filter(), language=
 retard      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("retard", from, filter=filter, language=language) }
 thumbs      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("thumbs", name, from, filter=filter, language=language) }
 
+#back        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("back", name, from, filter=filter, language=language) }
+#bm          <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
+#gfy         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
+greed       <- function(something, from=.from(), filter=.filter(), language=.language())           { .foaas("greed", something, from, filter=filter, language=language) }
+me          <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("me", from, filter=filter, language=language) }
+mornin      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("mornin", from, filter=filter, language=language) }
+
 ## catch-all 
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 

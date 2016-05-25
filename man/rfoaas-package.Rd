@@ -46,6 +46,9 @@
 %\alias{off_with}
 \alias{retard}
 \alias{thumbs}
+\alias{greed}
+\alias{me}
+\alias{mornin}
 \alias{thing}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -96,6 +99,9 @@
 %  off_with(behaviour, from, filter, language)
   retard(from, filter, language)
   thumbs(name, from, filter, language)
+  greed(something, from, filter, language)
+  me(from, filter, language)
+  mornin(from, filter, language)
 
   thing(name, from, filter, language)
 
