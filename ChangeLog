@@ -1,3 +1,14 @@
+2016-05-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R: Added greed(), me() and mornin()
+	* man/foaas.Rd: Documented new functions; corrected some formatting
+	and one typo
+	* tests/runTestsAgainstFOAAS.R: Added tests
+
+	* rfoaas.Rproj: Added
+	* .gitignore: Ditto
+	* .Rbuildignore: Updated
+
 2015-10-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version): Release 0.1.8.1

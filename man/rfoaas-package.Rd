@@ -54,7 +54,7 @@
 \title{R Interface to FOAAS}
 \description{
   The FOAAS service is provided as a modern, RESTful, scalable
-  solution. This packge provides an R interface.
+  solution. This package provides an R interface.
 }
 \usage{
   off(name, from, filter, language)
@@ -113,7 +113,7 @@
   \item{from}{The name of the message requester. If omitted, the value
   of the (optional) global variable \sQuote{rfoaasFrom} is used, and if
   that variable is missing or unset, a default is filled-in based on the
-  user name obtained via \code{\link{Sys.info}}}. 
+  user name obtained via \code{\link{Sys.info}}.}
   \item{filter}{An optional filter. If unset, the (optional) global
   variable \sQuote{rfoaasFilter} can provide a default, and a fallback
   value of \sQuote{none}. Currently the only other permitted value is
@@ -122,7 +122,7 @@
   \item{language}{An optional filter argument. If set, the message is
   internationalized to the given (optional) language stated as the the
   usual two-character code such as \sQuote{fr}, \sQuote{de},
-  \sQuote{es}}. 
+  \sQuote{es}.} 
   \item{reference}{An additional referenced in the message.}
   \item{company}{A company referenced in the message.}
   \item{tool}{A company referenced in the message.}
