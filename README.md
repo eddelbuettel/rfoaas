@@ -1,11 +1,11 @@
-# rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) [![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](http://cran.rstudio.com/package=rfoaas) [![Downloads](http://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](http://www.r-pkg.org/pkg/rfoaas)
+# rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) [![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](http://cran.r-project.org/package=rfoaas) [![Downloads](http://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](http://www.r-pkg.org/pkg/rfoaas)
 
 R interface to the [FOAAS](http://foaas.com) service 
 
 ## Where
 
 You can install released version of the package from
-[CRAN](http://cran.rstudio.com/) using the
+[CRAN](http://cran.r-project.org/) using the
 ```{.r}
 install.packages("rfoaas")
 ```
