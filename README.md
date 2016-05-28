@@ -47,6 +47,7 @@ Lastly, there is also an interface to [shoutcloud](http://shoutcloud.io/)
 which provides the immensely useful ALL CAPS AS A SERVICE because, well,
 sometimes you just got to yell:
 
+```{.r}
 R> greed("R Programming", "Random R Hacker", filter="shoutcloud")
 THE POINT IS, LADIES AND GENTLEMAN, THAT R PROGRAMMING -- FOR LACK OF A BETTER WORD -- IS 
 GOOD. R PROGRAMMING IS RIGHT. R PROGRAMMING WORKS. R PROGRAMMING CLARIFIES, CUTS THROUGH, 
@@ -54,6 +55,7 @@ AND CAPTURES THE ESSENCE OF THE EVOLUTIONARY SPIRIT. R PROGRAMMING, IN ALL OF IT
 PROGRAMMING FOR LIFE, FOR MONEY, FOR LOVE, KNOWLEDGE -- HAS MARKED THE UPWARD SURGE OF 
 MANKIND. - RANDOM R HACKER 
 R> 
+```
 
 ## Who
 
