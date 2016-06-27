@@ -189,7 +189,7 @@
     madison("Billy", "Eric")
 
     ## operations() returns JSON object listing the accessible functionality
-    if (require(jsonline)) print(fromJSON(operations()))
+    if (require(jsonlite)) print(fromJSON(operations()))
 
 }
 }
