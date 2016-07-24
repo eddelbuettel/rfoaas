@@ -51,6 +51,7 @@
 \alias{me}
 \alias{mornin}
 \alias{thing}
+\alias{getRandomFO}
 \docType{package}
 \title{R Interface to FOAAS}
 \description{
