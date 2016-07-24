@@ -134,7 +134,7 @@ mornin      <- function(from=.from(), filter=.filter(), language=.language())   
 ## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
-random <- function(name, from=.from(), filter=.filter(), language=.language()){
+getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language()){
 
     name_from <- c(
         "off"

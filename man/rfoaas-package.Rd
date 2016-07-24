@@ -105,7 +105,7 @@
   mornin(from, filter, language)
 
   thing(name, from, filter, language)
-  random_fo(name, from, filter, language)
+  getRandomFO(name, from, filter, language)
 
   version()
   operations()
