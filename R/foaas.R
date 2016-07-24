@@ -29,10 +29,10 @@
     #res
     ##
     ## -- but now we have to explicitly request it via accept headers, so we need http::GET
-    
+
     #srv <- "http://foaas.herokuapp.com"
     srv <- "http://foaas.com"
-    req <- paste(srv, ..., sep="/")		     	        # collate normal arguments 
+    req <- paste(srv, ..., sep="/")		     	        # collate normal arguments
 
     ## deal with optional arguments by test and conditional appends
     supargs <- c(ifelse(language=="none", "", paste0("i18n=", language)),
@@ -131,11 +131,62 @@ greed       <- function(something, from=.from(), filter=.filter(), language=.lan
 me          <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("me", from, filter=filter, language=language) }
 mornin      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("mornin", from, filter=filter, language=language) }
 
-## catch-all 
+## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
+random_fo <- function(name, from=.from(), filter=.filter(), language=.language()){
+
+    name_from <- c(
+        "off"
+        ,"you"
+        ,"donut"
+        ,"shakespeare"
+        ,"linus"
+        ,"king"
+        ,"chainsaw"
+        ,"outside"
+        ,"madison"
+        ,"nugget"
+        ,"yoda"
+        ,"xmas"
+        ,"bday"
+        ,"shutup"
+        ,"dalton"
+        ,"thumbs"
+        ,"back"
+    )
+
+    just_from <-  c(
+        "this"
+        ,"that"
+        ,"everything"
+        ,"everyone"
+        ,"thanks"
+        ,"flying"
+        ,"fascinating"
+        ,"cool"
+        ,"what"
+        ,"because"
+        ,"bye"
+        ,"diabetes"
+        ,"bus"
+        ,"awesome"
+        ,"tucker"
+        ,"bucket"
+        ,"family_"
+        ,"zayn"
+        ,"retard"
+        ,"me"
+        ,"mornin"
+        )
 
 
+    req <- sample(c(just_from, name_from), 1)
 
+    if(req %in% just_from){
+        .foaas(req, from, filter=filter, language=language)
+    } else if (req %in% name_from){
+        .foaas(req, name, from, filter=filter, language=language)
+    }
 
-
+}

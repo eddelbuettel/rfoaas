@@ -105,6 +105,7 @@
   mornin(from, filter, language)
 
   thing(name, from, filter, language)
+  random_fo(name, from, filter, language)
 
   version()
   operations()
@@ -126,7 +127,7 @@
   \item{language}{An optional filter argument. If set, the message is
   internationalized to the given (optional) language stated as the the
   usual two-character code such as \sQuote{fr}, \sQuote{de},
-  \sQuote{es}.} 
+  \sQuote{es}.}
   \item{reference}{An additional referenced in the message.}
   \item{company}{A company referenced in the message.}
   \item{tool}{A company referenced in the message.}
@@ -140,7 +141,7 @@
 }
 \value{
   For all (but one) queries, a text string with the request FOAAS
-  message is returned. 
+  message is returned.
 
   The exception is the very last query listed: \code{operations()}
   returns a JSON object describing all queries currently supported by
@@ -152,7 +153,7 @@
   Return values are set to the UTF-8 encoding as the FOAAS service
   defaults using UTF-8 strings. Anectodatally, this seems to help only
   on the Windows operating system as the other already handled UTF-8
-  correctly. 
+  correctly.
 }
 \details{
   The \code{operations()} query returns a JSON object describing the
