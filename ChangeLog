@@ -1,3 +1,12 @@
+2016-07-24  Tyler Hunt <tyler.hunt@utah.edu>
+
+	* R/foaas.R: New accessor getRandomFO()
+	* man/rfoaas-package.Rd: Document getRandomFO()
+
+2016-06-27  Marek Szatkowski <konto762884.5339@gmail.com>
+
+	* man/rfoaas-package.Rd: Correct jsonlite package test
+
 2016-05-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Updated with less profane greed() examples
