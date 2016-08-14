@@ -30,7 +30,7 @@ if (Sys.getenv("RunFOAASTests=yes") == "yes") runTests <- TRUE
 
 ## Also run the tests when building on Dirk's box, even whem
 ## the environment variable is not set
-if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
+## if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
 
 if (runTests) {
 
