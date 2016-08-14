@@ -124,66 +124,47 @@ dosomething <- function(do, something, from=.from(), filter=.filter(), language=
 retard      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("retard", from, filter=filter, language=language) }
 thumbs      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("thumbs", name, from, filter=filter, language=language) }
 
-#back        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("back", name, from, filter=filter, language=language) }
-#bm          <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
-#gfy         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
+back        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("back", name, from, filter=filter, language=language) }
+bm          <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
+gfy         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
 greed       <- function(something, from=.from(), filter=.filter(), language=.language())           { .foaas("greed", something, from, filter=filter, language=language) }
 me          <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("me", from, filter=filter, language=language) }
 mornin      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("mornin", from, filter=filter, language=language) }
 
+think       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("think", name, from, filter=filter, language=language) }
+keep        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("keep", name, from, filter=filter, language=language) }
+single_     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("single", from, filter=filter, language=language) }
+look        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("look", name, from, filter=filter, language=language) }
+looking     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("looking", from, filter=filter, language=language) }
+no          <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("no", from, filter=filter, language=language) }
+give        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("give", from, filter=filter, language=language) }
+zero        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("zero", from, filter=filter, language=language) }
+pulp        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("pulp", name, from, filter=filter, language=language) }
+sake        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("sake", from, filter=filter, language=language) }
+anyway      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("anyway", name, from, filter=filter, language=language) }
+
 ## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
-getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language()){
+getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language()) {
 
     name_from <- c(
-        "off"
-        ,"you"
-        ,"donut"
-        ,"shakespeare"
-        ,"linus"
-        ,"king"
-        ,"chainsaw"
-        ,"outside"
-        ,"madison"
-        ,"nugget"
-        ,"yoda"
-        ,"xmas"
-        ,"bday"
-        ,"shutup"
-        ,"dalton"
-        ,"thumbs"
-        ,"back"
+        "off",		"you",		"donut",	"shakespeare",	"linus" ,	"king",		"chainsaw",
+        "outside",	"madison",	"nugget",	"yoda",		"xmas",		"bday",		"shutup",
+        "dalton",	"thumbs",	"back",		"bm",		"gfy",		"greed",	"think",
+        "keep",		"look", 	"pulp",		"anyway"
     )
 
     just_from <-  c(
-        "this"
-        ,"that"
-        ,"everything"
-        ,"everyone"
-        ,"thanks"
-        ,"flying"
-        ,"fascinating"
-        ,"cool"
-        ,"what"
-        ,"because"
-        ,"bye"
-        ,"diabetes"
-        ,"bus"
-        ,"awesome"
-        ,"tucker"
-        ,"bucket"
-        ,"family_"
-        ,"zayn"
-        ,"retard"
-        ,"me"
-        ,"mornin"
-        )
-
+        "this",		"that",		"everything",	"everyone",	"thanks",	"flying",	"fascinating",
+        "cool",		"what",		"because",	"bye",		"diabetes",	"bus",		"awesome",
+        "tucker",	"bucket",	"family_",	"zayn",		"retard",	"me",		"mornin",
+        "single_",	"looking",	"no",		"give",		"zero",		"sake"
+    )
 
     req <- sample(c(just_from, name_from), 1)
 
-    if(req %in% just_from){
+    if (req %in% just_from){
         .foaas(req, from, filter=filter, language=language)
     } else if (req %in% name_from){
         .foaas(req, name, from, filter=filter, language=language)

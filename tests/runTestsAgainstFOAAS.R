@@ -1,6 +1,6 @@
 ##  runTestsAgainstFOOAS --- simple Continuous Integration tests
 ##
-##  Copyright (C) 2015  Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2015 - 2016  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -30,7 +30,7 @@ if (Sys.getenv("RunFOAASTests=yes") == "yes") runTests <- TRUE
 
 ## Also run the tests when building on Dirk's box, even whem
 ## the environment variable is not set
-if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
+## if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
 
 if (runTests) {
 
@@ -103,6 +103,18 @@ if (runTests) {
     stopifnot(me          (from=from)             == "Fuck me. - Me")
     stopifnot(mornin      (from=from)             == "Happy fuckin' Mornin'! - Me")
 
+    stopifnot(think	  (name=name, from=from)  == "Someone, you think I give a fuck? - Me") 
+    stopifnot(keep	  (name=name, from=from)  == "Someone: Fuck off. And when you get there, fuck off from there too. Then fuck off some more. Keep fucking off until you get back here. Then fuck off again. - Me")   
+    stopifnot(single_	  (from=from)             == "Not a single fuck was given. - Me") 
+    stopifnot(look	  (name=name, from=from)  == "Someone, do I look like I give a fuck? - Me") 
+    stopifnot(looking     (from=from)             == "Looking for a fuck to give. - Me")
+    stopifnot(no          (from=from)             == "No fucks given. - Me") 
+    stopifnot(give        (from=from)             == "I give zero fucks. - Me")    
+    stopifnot(zero        (from=from)             == "Zero, thats the number of fucks I give. - Me")
+    stopifnot(pulp	  (name=name, from=from)  == "Someone, motherfucker, do you speak it? - Me")
+    stopifnot(sake        (from=from)             == "For Fuck's sake! - Me")
+    stopifnot(anyway      (name=name, from=from)  == "Who the fuck are you anyway, Someone, why are you stirring up so much trouble, and, who pays you? - Me") 
+    
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
     
     ## shoutcloud
@@ -111,8 +123,8 @@ if (runTests) {
     ## language
     #stopifnot(off         (name=name, from=from, language="de")  == ""Fuck off jemand. - Me")
     
-    ## shoutcloud and language
-    stopifnot(off         (name=name, from=from, filter="shoutcloud", language="de")  == "FUCK OFF JEMAND. - ME")
+    ## shoutcloud and language -- cannot test, responses change
+    #stopifnot(off         (name=name, from=from, filter="shoutcloud", language="de")  == "FUCK OFF JEMAND. - ME")
     
 }
 
