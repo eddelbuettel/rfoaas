@@ -8,6 +8,8 @@
 
 	* .travis.yml: Switch to using run.sh for Travis CI
 
+	* DESCRIPTION (URL): Set to home page
+
 2016-07-24  Tyler Hunt <tyler.hunt@utah.edu>
 
 	* R/foaas.R: New accessor getRandomFO()

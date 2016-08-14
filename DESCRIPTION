@@ -6,7 +6,7 @@ Date: 2016-08-14
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: R access to the 'FOAAS' (F... Off As A Service) web service is provided.
-URL: https://github.com/eddelbuettel/rfoaas
+URL: http://dirk.eddelbuettel.com/code/rfoaas.html
 BugReports: https://github.com/eddelbuettel/rfoaas/issues
 License: GPL (>= 2)
 Imports: httr
