@@ -139,7 +139,7 @@ looking     <- function(from=.from(), filter=.filter(), language=.language())   
 no          <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("no", from, filter=filter, language=language) }
 give        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("give", from, filter=filter, language=language) }
 zero        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("zero", from, filter=filter, language=language) }
-pulp        <- function(lang, name, filter=.filter(), language=.language())                        { .foaas("pulp", lang, name, filter=filter, language=language) }
+pulp        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("pulp", name, from, filter=filter, language=language) }
 sake        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("sake", from, filter=filter, language=language) }
 anyway      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("anyway", name, from, filter=filter, language=language) }
 

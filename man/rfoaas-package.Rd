@@ -129,7 +129,7 @@
   no(from, filter, language)
   give(from, filter, language)
   zero(from, filter, language)
-  pulp(lang, name, filter, language)
+  pulp(name, from, filter, language)
   sake(from, filter, language)
   anyway(name, from, filter, language)
 
@@ -163,8 +163,6 @@
   \item{do}{A activity referenced in the message.}
   \item{something}{An object referenced in the message.}
   \item{reaction}{An activity referenced in the message.}
-  \item{lang}{A language (not to be confused with the filter argument)
-    referenced in the message.} 
 
   \item{x}{Default object for \code{print} method}
   \item{width}{Optional column width parameter}
