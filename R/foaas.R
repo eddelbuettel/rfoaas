@@ -159,14 +159,16 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "off",		"you",		"donut",	"shakespeare",	"linus" ,	"king",		"chainsaw",
         "outside",	"madison",	"nugget",	"yoda",		"xmas",		"bday",		"shutup",
         "dalton",	"thumbs",	"back",		"bm",		"gfy",		"greed",	"think",
-        "keep",		"look", 	"pulp",		"anyway"
+        "keep",		"look", 	"pulp",		"anyway", "blackadder", "deraadt", "problem",
+        "cocksplat"
     )
 
     just_from <-  c(
         "this",		"that",		"everything",	"everyone",	"thanks",	"flying",	"fascinating",
         "cool",		"what",		"because",	"bye",		"diabetes",	"bus",		"awesome",
         "tucker",	"bucket",	"family_",	"zayn",		"retard",	"me",		"mornin",
-        "single_",	"looking",	"no",		"give",		"zero",		"sake"
+        "single_",	"looking",	"no",		"give",		"zero",		"sake", "maybe",
+        "horse", "too"
     )
 
     req <- sample(c(just_from, name_from), 1)
