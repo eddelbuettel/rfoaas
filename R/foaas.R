@@ -142,6 +142,13 @@ zero        <- function(from=.from(), filter=.filter(), language=.language())   
 pulp        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("pulp", name, from, filter=filter, language=language) }
 sake        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("sake", from, filter=filter, language=language) }
 anyway      <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("anyway", name, from, filter=filter, language=language) }
+maybe       <- function(from=.from(), filter=.filter(), language=.language())                       { .foaas("maybe", from, filter=filter, language=language) }
+blackadder  <- function(name, from=.from(), filter=.filter(), language=.language())              { .foaas("blackadder", name, from, filter=filter, language=language) }
+horse       <- function(from=.from(), filter=.filter(), language=.language())                       { .foaas("horse", from, filter=filter, language=language) }
+deraadt     <- function(name, from=.from(), filter=.filter(), language=.language())               { .foaas("deraadt", name, from, filter=filter, language=language) }
+problem     <- function(name, from=.from(), filter=.filter(), language=.language())               { .foaas("problem", name, from, filter=filter, language=language) }
+cocksplat   <- function(name, from=.from(), filter=.filter(), language=.language())               { .foaas("cocksplat", name, from, filter=filter, language=language) }
+too         <- function(from=.from(), filter=.filter(), language=.language())                         { .foaas("too", from, filter=filter, language=language) }
 
 ## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
@@ -152,14 +159,16 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "off",		"you",		"donut",	"shakespeare",	"linus" ,	"king",		"chainsaw",
         "outside",	"madison",	"nugget",	"yoda",		"xmas",		"bday",		"shutup",
         "dalton",	"thumbs",	"back",		"bm",		"gfy",		"greed",	"think",
-        "keep",		"look", 	"pulp",		"anyway"
+        "keep",		"look", 	"pulp",		"anyway", "blackadder", "deraadt", "problem",
+        "cocksplat"
     )
 
     just_from <-  c(
         "this",		"that",		"everything",	"everyone",	"thanks",	"flying",	"fascinating",
         "cool",		"what",		"because",	"bye",		"diabetes",	"bus",		"awesome",
         "tucker",	"bucket",	"family_",	"zayn",		"retard",	"me",		"mornin",
-        "single_",	"looking",	"no",		"give",		"zero",		"sake"
+        "single_",	"looking",	"no",		"give",		"zero",		"sake", "maybe",
+        "horse", "too"
     )
 
     req <- sample(c(just_from, name_from), 1)

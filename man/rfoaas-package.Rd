@@ -64,6 +64,13 @@
 \alias{pulp}
 \alias{sake}
 \alias{anyway}
+\alias{maybe}
+\alias{blackadder}
+\alias{horse}
+\alias{deraadt}
+\alias{problem}
+\alias{cocksplat}
+\alias{too}
 \alias{thing}
 \alias{getRandomFO}
 \docType{package}
@@ -132,7 +139,13 @@
   pulp(name, from, filter, language)
   sake(from, filter, language)
   anyway(name, from, filter, language)
-
+  maybe(from, filter, language)
+  blackadder(name, from, filter, language)
+  horse(from, filter, language)
+  deraadt(name, from, filter, language)
+  problem(name, from, filter, language)
+  cocksplat(name, from, filter, language)
+  too(from, filter, language)
   thing(name, from, filter, language)
   getRandomFO(name, from, filter, language)
 

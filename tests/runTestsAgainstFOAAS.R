@@ -47,7 +47,7 @@ if (runTests) {
     reaction  <- "do not panic"
 
     ## basic operations
-    stopifnot(off         (name=name, from=from)  == "Fuck off, Someone. - Me") 
+    stopifnot(off         (name=name, from=from)  == "Fuck off, Someone. - Me")
     stopifnot(you         (name=name, from=from)  == "Fuck you, Someone. - Me")
     stopifnot(this        (from=from)             == "Fuck this. - Me")
     stopifnot(that        (from=from)             == "Fuck that. - Me")
@@ -68,12 +68,12 @@ if (runTests) {
     stopifnot(cool        (from=from)             == "Cool story, bro. - Me")
     stopifnot(field       (name=name, from=from,
                            reference=reference)   == "And Someone said unto Me, 'Verily, cast thine eyes upon the field in which I grow my fucks', and Me gave witness unto the field, and saw that it was barren. - Something somewhere")
-    
+
     stopifnot(nugget      (name=name, from=from)  == "Well Someone, aren't you a shining example of a rancid fuck-nugget. - Me")
     stopifnot(yoda        (name=name, from=from)  == "Fuck off, you must, Someone. - Me")
     stopifnot(ballmer     (name=name, company=company,
                            from=from)             == "Fucking Someone is a fucking pussy. I'm going to fucking bury that guy, I have done it before, and I will do it again. I'm going to fucking kill XYZ Corp. - Me")
-    
+
     stopifnot(what        (from=from)             == "What the fuck‽ - Me")
     stopifnot(because     (from=from)             == "Why? Because Fuck you, that's why. - Me")
     stopifnot(caniuse     (tool=tool, from=from)  == "Can you use Some magic thing? Fuck no! - Me")
@@ -82,7 +82,7 @@ if (runTests) {
     stopifnot(bus         (from=from)             == "Fuck bus. - Me")
     stopifnot(xmas        (name=name, from=from)  == "Merry Fucking Christmas, Someone. - Me")
     stopifnot(awesome     (from=from)             == "This is Fucking Awesome. - Me")
-    
+
     stopifnot(tucker      (from=from)             == "Come the fuck in or fuck the fuck off. - Me")
     stopifnot(bucket      (from=from)             == "Please choke on a bucket of cocks. - Me")
     stopifnot(bday        (name=name, from=from)  == "Happy Fucking Birthday, Someone. - Me")
@@ -103,28 +103,35 @@ if (runTests) {
     stopifnot(me          (from=from)             == "Fuck me. - Me")
     stopifnot(mornin      (from=from)             == "Happy fuckin' Mornin'! - Me")
 
-    stopifnot(think	  (name=name, from=from)  == "Someone, you think I give a fuck? - Me") 
-    stopifnot(keep	  (name=name, from=from)  == "Someone: Fuck off. And when you get there, fuck off from there too. Then fuck off some more. Keep fucking off until you get back here. Then fuck off again. - Me")   
-    stopifnot(single_	  (from=from)             == "Not a single fuck was given. - Me") 
-    stopifnot(look	  (name=name, from=from)  == "Someone, do I look like I give a fuck? - Me") 
+    stopifnot(think	  (name=name, from=from)  == "Someone, you think I give a fuck? - Me")
+    stopifnot(keep	  (name=name, from=from)  == "Someone: Fuck off. And when you get there, fuck off from there too. Then fuck off some more. Keep fucking off until you get back here. Then fuck off again. - Me")
+    stopifnot(single_	  (from=from)             == "Not a single fuck was given. - Me")
+    stopifnot(look	  (name=name, from=from)  == "Someone, do I look like I give a fuck? - Me")
     stopifnot(looking     (from=from)             == "Looking for a fuck to give. - Me")
-    stopifnot(no          (from=from)             == "No fucks given. - Me") 
-    stopifnot(give        (from=from)             == "I give zero fucks. - Me")    
+    stopifnot(no          (from=from)             == "No fucks given. - Me")
+    stopifnot(give        (from=from)             == "I give zero fucks. - Me")
     stopifnot(zero        (from=from)             == "Zero, thats the number of fucks I give. - Me")
     stopifnot(pulp	  (name=name, from=from)  == "Someone, motherfucker, do you speak it? - Me")
     stopifnot(sake        (from=from)             == "For Fuck's sake! - Me")
-    stopifnot(anyway      (name=name, from=from)  == "Who the fuck are you anyway, Someone, why are you stirring up so much trouble, and, who pays you? - Me") 
-    
+    stopifnot(anyway      (name=name, from=from)  == "Who the fuck are you anyway, Someone, why are you stirring up so much trouble, and, who pays you? - Me")
+    stopifnot(maybe       (from=from)             == "Maybe. Maybe not. Maybe fuck yourself. - Me")
+    stopifnot(blackadder  (name=name, from=from)  == "Someone, your head is as empty as a eunuch’s underpants. Fuck off! - Me")
+    stopifnot(horse       (from=from)             == "Fuck you and the horse you rode in on. - Me")
+    stopifnot(deraadt     (name=name, from=from)  == "Someone you are being the usual slimy hypocritical asshole... You may have had value ten years ago, but people will see that you don't anymore. - Me")
+    stopifnot(problem     (name=name, from=from)  == "What the fuck is you problem Someone? - Me")
+    stopifnot(cocksplat   (name=name, from=from)  == "Fuck off Someone, you worthless cocksplat - Me")
+    stopifnot(too         (from=from)             == "Thanks, fuck you too. - Me")
+
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
-    
+
     ## shoutcloud
-    stopifnot(off         (name=name, from=from, filter="shoutcloud")  == "FUCK OFF, SOMEONE. - ME") 
+    stopifnot(off         (name=name, from=from, filter="shoutcloud")  == "FUCK OFF, SOMEONE. - ME")
 
     ## language
     #stopifnot(off         (name=name, from=from, language="de")  == ""Fuck off jemand. - Me")
-    
+
     ## shoutcloud and language -- cannot test, responses change
     #stopifnot(off         (name=name, from=from, filter="shoutcloud", language="de")  == "FUCK OFF JEMAND. - ME")
-    
+
 }
 
