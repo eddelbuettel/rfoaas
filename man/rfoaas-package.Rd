@@ -256,9 +256,9 @@
         out[[i]] <- do.call(i, arglist)
     }
     return(out)
-}
-
-
+    }
+    }
+    
 }
 }
 \keyword{package}
