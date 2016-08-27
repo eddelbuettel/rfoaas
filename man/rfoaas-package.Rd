@@ -234,6 +234,31 @@
     ## operations() returns JSON object listing the accessible functionality
     if (require(jsonlite)) print(fromJSON(operations()))
 
+    ## get all accessors in the package
+    ## Be careful as this creates a load on rfoaas.org
+    printallfos <- function(name='NAME', from='FROM', tool='R',
+                        company='YOYODYNE', do='DEBUG',
+                        something='R', reference='REFERENCE',
+                        reaction='SWITCH TO R') {
+    y <- lsf.str('package:rfoaas')
+    y <- y[-which(y %in% c('operations', 'print.rfoaas', 'version'))]
+    argnames <- names(formals())
+    out <- list()
+    ## Enable one of the two next lines
+    ## following gets just three exclamations:
+    ## for (i in c('ballmer', 'shakespeare', 'madison')) {
+    ## get all exclamations 
+    for (i in y) {          
+        arglist <- list()
+        fnargs <- names(formals(i))
+        for (j in argnames)
+            if (length(grep(j, fnargs))>0) arglist[[j]] <- get(j)
+        out[[i]] <- do.call(i, arglist)
+    }
+    return(out)
+}
+
+
 }
 }
 \keyword{package}
