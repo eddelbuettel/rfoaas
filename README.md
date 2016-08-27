@@ -1,8 +1,8 @@
-# rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) [![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](http://cran.r-project.org/package=rfoaas) [![Downloads](http://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](http://www.r-pkg.org/pkg/rfoaas)
+## rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) [![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](http://cran.r-project.org/package=rfoaas) [![Downloads](http://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](http://www.r-pkg.org/pkg/rfoaas)
 
 R interface to the [FOAAS](http://foaas.com) service 
 
-## Where
+### Where
 
 You can install released version of the package from
 [CRAN](http://cran.r-project.org/) using the
@@ -11,7 +11,7 @@ install.packages("rfoaas")
 ```
 function.
 
-## Example
+### Example
 
 Just like [FOAAS](http://www.foaas.com), the package provides a number of
 standard profanity-issuing access points, as well as some less profane
@@ -57,11 +57,11 @@ MANKIND. - RANDOM R HACKER
 R> 
 ```
 
-## Who
+### Who
 
 Dirk Eddelbuettel
 
-## License
+### License
 
 GPL (>= 2) as most of my code though a case could be made for aligning with
 the [WTFPL](http://www.wtfpl.net/) license that the
