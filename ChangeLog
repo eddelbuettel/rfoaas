@@ -1,3 +1,9 @@
+2016-08-28  Robert McDonald <rmcd1024@gmail.com>
+
+	* demo/printallfos.R (printallfos): Added demo to show available
+	accessor by querying the package environment, and nicely
+	pretty-printing it; by default only two accessor are shown
+
 2016-08-27  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Date, Version): Release 1.1.0
