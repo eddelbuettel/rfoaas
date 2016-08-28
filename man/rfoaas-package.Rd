@@ -235,7 +235,5 @@
     if (require(jsonlite)) print(fromJSON(operations()))
 
     }
-    
 }
-
 \keyword{package} 
