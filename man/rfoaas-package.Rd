@@ -234,6 +234,6 @@
     ## operations() returns JSON object listing the accessible functionality
     if (require(jsonlite)) print(fromJSON(operations()))
 
+    }
 }
-}
-\keyword{package}
+\keyword{package} 
