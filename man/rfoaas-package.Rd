@@ -72,6 +72,13 @@
 \alias{cocksplat}
 \alias{too}
 \alias{thing}
+\alias{asshole}
+\alias{cup}
+\alias{fyyff}
+\alias{immensity}
+\alias{programmer}
+\alias{rtfm}
+\alias{thinking}
 \alias{getRandomFO}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -147,6 +154,13 @@
   cocksplat(name, from, filter, language)
   too(from, filter, language)
   thing(name, from, filter, language)
+  asshole(from, filter, language)
+  cup(from, filter, language)
+  fyyff(from, filter, language)
+  immensity(from, filter, language)
+  programmer(from, filter, language)
+  rtfm(from, filter, language)
+  thinking(name, from, filter, language)
   getRandomFO(name, from, filter, language)
 
   version()
