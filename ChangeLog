@@ -7,6 +7,8 @@
 
 	* .travis.yml (after_success): Added coverage, added tests
 
+	* README.md: Added coverage badge, and No Code of Conduct paragraph
+
 	* .Rbuildignore: Also ignore .tar.gz
 
 2017-08-26  Dirk Eddelbuettel  <edd@debian.org>
