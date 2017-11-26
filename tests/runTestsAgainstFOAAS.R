@@ -148,9 +148,12 @@ if (runTests) {
     set.seed(123)
     stopifnot(getRandomFO(name=name, from=from)  == "You Fucktard! - Me")
 
+    set.seed(42)
+    stopifnot(getRandomFO(name="Someone", from="Me") == "Who the fuck are you anyway, Someone, why are you stirring up so much trouble, and, who pays you? - Me")
+
     v <- version()
     op <- operations()
-    nobody <- rfoaas:::.from()
+    print(getRandomFO(name=name))
 
 }
 
