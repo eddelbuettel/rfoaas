@@ -1,3 +1,9 @@
+2017-11-26  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R (asshole): Seven new accessors
+	* man/rfoaas-package.Rd: And their documentation
+	* tests/runTestsAgainstFOAAS.R: And tests
+
 2017-08-26  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml (before_install): Use https for curl fetch

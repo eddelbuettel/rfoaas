@@ -1,6 +1,6 @@
 ##  rfoaas -- An R interface to the FOAAS service
 ##
-##  Copyright (C) 2014 - 2016  Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2014 - 2017  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -150,6 +150,15 @@ problem     <- function(name, from=.from(), filter=.filter(), language=.language
 cocksplat   <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("cocksplat", name, from, filter=filter, language=language) }
 too         <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("too", from, filter=filter, language=language) }
 
+asshole     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("asshole", from, filter=filter, language=language) }
+cup         <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("cup", from, filter=filter, language=language) }
+fyyff       <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("fyyff", from, filter=filter, language=language) }
+immensity   <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("immensity", from, filter=filter, language=language) }
+programmer  <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("programmer", from, filter=filter, language=language) }
+rtfm        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("rtfm", from, filter=filter, language=language) }
+thinking    <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("thinking", name, from, filter=filter, language=language) }
+
+
 ## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
@@ -160,7 +169,7 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "outside",	"madison",	"nugget",	"yoda",		"xmas",		"bday",		"shutup",
         "dalton",	"thumbs",	"back",		"bm",		"gfy",		"greed",	"think",
         "keep",		"look", 	"pulp",		"anyway", 	"blackadder", 	"deraadt", 	"problem",
-        "cocksplat"
+        "cocksplat",    "thinking"
     )
 
     just_from <-  c(
@@ -168,7 +177,8 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "cool",		"what",		"because",	"bye",		"diabetes",	"bus",		"awesome",
         "tucker",	"bucket",	"family_",	"zayn",		"retard",	"me",		"mornin",
         "single_",	"looking",	"no",		"give",		"zero",		"sake", 	"maybe",
-        "horse", 	"too"
+        "horse", 	"too",		"asshole",	"cup",		"fyyff",	"immensity",	"programmer",
+        "rtfm"
     )
 
     req <- sample(c(just_from, name_from), 1)

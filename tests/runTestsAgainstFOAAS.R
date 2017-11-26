@@ -122,6 +122,14 @@ if (runTests) {
     stopifnot(cocksplat   (name=name, from=from)  == "Fuck off Someone, you worthless cocksplat - Me")
     stopifnot(too         (from=from)             == "Thanks, fuck you too. - Me")
 
+    stopifnot(asshole	  (from=from)             == "Fuck you, asshole. - Me")
+    stopifnot(cup	  (from=from)             == "How about a nice cup of shut the fuck up? - Me")
+    stopifnot(fyyff	  (from=from)             == "Fuck you, you fucking fuck. - Me")
+    stopifnot(immensity	  (from=from)             == "You can not imagine the immensity of the FUCK I do not give. - Me ")
+    stopifnot(programmer  (from=from)  		  == "Fuck you, I'm a programmer, bitch! - Me")
+    stopifnot(rtfm	  (from=from)	  	  == "Read the fucking manual! - Me")
+    stopifnot(thinking    (name=name, from=from)  == "Someone, what the fuck were you actually thinking? - Me")
+
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
 
     ## shoutcloud
