@@ -4,6 +4,10 @@
 	* man/rfoaas-package.Rd: And their documentation
 	* tests/runTestsAgainstFOAAS.R: And tests
 
+	* .travis.yml (after_success): Added coverage
+
+	* .Rbuildignore: Also ignore .tar.gz
+
 2017-08-26  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml (before_install): Use https for curl fetch

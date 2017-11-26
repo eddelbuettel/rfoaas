@@ -2,3 +2,4 @@
 LICENSE
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^.*.tar.gz$
