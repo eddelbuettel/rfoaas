@@ -31,7 +31,7 @@
     ## -- but now we have to explicitly request it via accept headers, so we need http::GET
 
     #srv <- "http://foaas.herokuapp.com"
-    srv <- "http://foaas.com"
+    srv <- "https://foaas.com"
     req <- paste(srv, ..., sep="/")		     	        # collate normal arguments
 
     ## deal with optional arguments by test and conditional appends
@@ -126,7 +126,7 @@ thumbs      <- function(name, from=.from(), filter=.filter(), language=.language
 
 back        <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("back", name, from, filter=filter, language=language) }
 bm          <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
-gfy         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("bm", name, from, filter=filter, language=language) }
+gfy         <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("gfy", name, from, filter=filter, language=language) }
 greed       <- function(something, from=.from(), filter=.filter(), language=.language())           { .foaas("greed", something, from, filter=filter, language=language) }
 me          <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("me", from, filter=filter, language=language) }
 mornin      <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("mornin", from, filter=filter, language=language) }

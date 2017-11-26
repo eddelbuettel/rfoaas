@@ -1,11 +1,11 @@
 2017-11-26  Dirk Eddelbuettel  <edd@debian.org>
 
-	* R/foaas.R (asshole): Seven new accessors
-	* man/rfoaas-package.Rd: And their documentation
+	* R/foaas.R: Seven new accessors, corrected one call, use https
+	* man/rfoaas-package.Rd: Expanded documentation
 	* tests/runTestsAgainstFOAAS.R: And tests; corrected several
 	reference results
 
-	* .travis.yml (after_success): Added coverage
+	* .travis.yml (after_success): Added coverage, added tests
 
 	* .Rbuildignore: Also ignore .tar.gz
 

@@ -97,6 +97,9 @@ if (runTests) {
     ##off_with
     stopifnot(retard      (from=from)             == "You Fucktard! - Me")
     stopifnot(thumbs      (name=name, from=from)  == "Who has two thumbs and doesn't give a fuck? Someone. - Me")
+    stopifnot(back        (name=name, from=from)  == "Someone, back the fuck off. - Me")
+    stopifnot(bm          (name=name, from=from)  == "Bravo mike, Someone. - Me")
+    stopifnot(gfy         (name=name, from=from)  == "Golf foxtrot yankee, Someone. - Me")
     stopifnot(greed       (something=something,
                            from=from)             == "The point is, ladies and gentleman, that something -- for lack of a better word -- is good. Something is right. Something works. Something clarifies, cuts through, and captures the essence of the evolutionary spirit. Something, in all of its forms -- Something for life, for money, for love, knowledge -- has marked the upward surge of mankind. - Me")
 
@@ -140,6 +143,14 @@ if (runTests) {
 
     ## shoutcloud and language -- cannot test, responses change
     #stopifnot(off         (name=name, from=from, filter="shoutcloud", language="de")  == "FUCK OFF JEMAND. - ME")
+
+    ## cover randomFO
+    set.seed(123)
+    stopifnot(getRandomFO(name=name, from=from)  == "You Fucktard! - Me")
+
+    v <- version()
+    op <- operations()
+    nobody <- rfoaas:::.from()
 
 }
 
