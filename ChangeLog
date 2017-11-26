@@ -2,7 +2,8 @@
 
 	* R/foaas.R (asshole): Seven new accessors
 	* man/rfoaas-package.Rd: And their documentation
-	* tests/runTestsAgainstFOAAS.R: And tests
+	* tests/runTestsAgainstFOAAS.R: And tests; corrected several
+	reference results
 
 	* .travis.yml (after_success): Added coverage
 
