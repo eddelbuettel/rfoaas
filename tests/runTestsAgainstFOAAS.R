@@ -26,7 +26,7 @@ runTests <- FALSE
 ##
 ## Set this variable manually if you want to run the tests
 ##
-if (Sys.getenv("RunFOAASTests=yes") == "yes") runTests <- TRUE
+if (Sys.getenv("RunFOAASTests") == "yes") runTests <- TRUE
 
 ## Also run the tests when building on Dirk's box, even whem
 ## the environment variable is not set
