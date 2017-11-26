@@ -1,5 +1,7 @@
 2017-11-26  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Release 1.1.1
+
 	* R/foaas.R: Seven new accessors, corrected one call, use https
 	* man/rfoaas-package.Rd: Expanded documentation
 	* tests/runTestsAgainstFOAAS.R: And tests; corrected several
