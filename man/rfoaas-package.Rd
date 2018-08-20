@@ -44,7 +44,7 @@
 \alias{keepcalm}
 \alias{dalton}
 \alias{dosomething}
-%\alias{off_with}
+\alias{off_with}
 \alias{retard}
 \alias{thumbs}
 \alias{back}
@@ -79,6 +79,13 @@
 \alias{programmer}
 \alias{rtfm}
 \alias{thinking}
+\alias{bag}
+\alias{equity}
+\alias{fts}
+\alias{ing}
+\alias{particular}
+\alias{ridiculous}
+\alias{shit}
 \alias{getRandomFO}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -126,7 +133,7 @@
   keepcalm(reaction, from, filter, language)
   dalton(name, from, filter, language)
   dosomething(do, something, from, filter, language)
-%  off_with(behaviour, from, filter, language)
+  off_with(name, from, filter, language)
   retard(from, filter, language)
   thumbs(name, from, filter, language)
   back(name, from, filter, language)
@@ -161,6 +168,14 @@
   programmer(from, filter, language)
   rtfm(from, filter, language)
   thinking(name, from, filter, language)
+  bag(from, filter, language)
+  equity(name, from, filter, language)
+  fts(name, from, filter, language)
+  ing(name, from, filter, language)
+  particular(name, from, filter, language)
+  ridiculous(from, filter, language)
+  shit(from, filter, language)
+
   getRandomFO(name, from, filter, language)
 
   version()

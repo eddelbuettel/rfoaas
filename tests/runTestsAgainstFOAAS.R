@@ -1,6 +1,6 @@
 ##  runTestsAgainstFOOAS --- simple Continuous Integration tests
 ##
-##  Copyright (C) 2015 - 2016  Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2015 - 2018  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -94,7 +94,7 @@ if (runTests) {
     stopifnot(dalton      (name=name, from=from)  == "Someone: A fucking problem solving super-hero. - Me")
     stopifnot(dosomething (do=do, something=something,
                            from=from)             == "Get the fucking Something! - Me")
-    ##off_with
+    stopifnot(off_with    (name=name, from=from)  == "Fuck off with Someone - Me")
     stopifnot(retard      (from=from)             == "You Fucktard! - Me")
     stopifnot(thumbs      (name=name, from=from)  == "Who has two thumbs and doesn't give a fuck? Someone. - Me")
     stopifnot(back        (name=name, from=from)  == "Someone, back the fuck off. - Me")
@@ -132,6 +132,14 @@ if (runTests) {
     stopifnot(programmer  (from=from)  		  == "Fuck you, I'm a programmer, bitch! - Me")
     stopifnot(rtfm	  (from=from)	  	  == "Read the fucking manual! - Me")
     stopifnot(thinking    (name=name, from=from)  == "Someone, what the fuck were you actually thinking? - Me")
+
+    stopifnot(bag         (from=from)             == "Eat a bag of fucking dicks. - Me")
+    stopifnot(equity      (name=name, from=from)  == "Equity only? Long hours? Zero Pay? Well Someone, just sign me right the fuck up. - Me")
+    stopifnot(fts         (name=name, from=from)  == "Fuck that shit, Someone. - Me")
+    stopifnot(ing         (name=name, from=from)  == "Fucking fuck off, Someone. - Me")
+    stopifnot(particular  (name=name, from=from)  == "Fuck this Someone in particular. - Me")
+    stopifnot(ridiculous  (from=from)             == "That's fucking ridiculous - Me")
+    stopifnot(shit        (from=from)             == "Fuck this shit! - Me")
 
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
 
