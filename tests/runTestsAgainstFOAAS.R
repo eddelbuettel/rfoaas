@@ -154,10 +154,12 @@ if (runTests) {
 
     ## cover randomFO
     set.seed(123)
-    stopifnot(getRandomFO(name=name, from=from)  == "You Fucktard! - Me")
+    stopifnot(getRandomFO(name=name, from=from)  ==
+              structure("Happy fuckin' mornin'! - Me", class = "rfoaas"))
 
     set.seed(42)
-    stopifnot(getRandomFO(name="Someone", from="Me") == "Who the fuck are you anyway, Someone, why are you stirring up so much trouble, and, who pays you? - Me")
+    stopifnot(getRandomFO(name=name, from=from) ==
+              structure("What the fuck is your problem Someone? - Me", class = "rfoaas"))
 
     v <- version()
     op <- operations()
