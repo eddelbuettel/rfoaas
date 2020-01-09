@@ -1,3 +1,12 @@
+2020-01-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 2.1.0
+
+	* R/foaas.R: Eleven new accessors (even, fewer, ftfty, holygrail,
+	idea, jinglebells, legend, logs, ratsarse, rockstar, waste) from
+	foas 2.1.0
+	* tests/runTestsAgainstFOAAS.R: Reactivated, expanded and updated
+
 2018-08-20  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 2.0.0
@@ -7,7 +16,7 @@
 	* man/rfoaas-package.Rd: Expanded documentation
 	* tests/runTestsAgainstFOAAS.R: Expanded tests
 
-	* tests/runTestsAgainstFOAAS.R: Updated getRandomFO() 
+	* tests/runTestsAgainstFOAAS.R: Updated getRandomFO()
 
 2017-11-26  Dirk Eddelbuettel  <edd@debian.org>
 

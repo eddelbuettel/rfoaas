@@ -30,7 +30,7 @@ if (Sys.getenv("RunFOAASTests") == "yes") runTests <- TRUE
 
 ## Also run the tests when building on Dirk's box, even whem
 ## the environment variable is not set
-## if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
+if (isTRUE(unname(Sys.info()["user"])=="edd")) runTests <- TRUE
 
 if (runTests) {
 
@@ -113,7 +113,7 @@ if (runTests) {
     stopifnot(looking     (from=from)             == "Looking for a fuck to give. - Me")
     stopifnot(no          (from=from)             == "No fucks given. - Me")
     stopifnot(give        (from=from)             == "I give zero fucks. - Me")
-    stopifnot(zero        (from=from)             == "Zero, thats the number of fucks I give. - Me")
+    stopifnot(zero        (from=from)             == "Zero, that's the number of fucks I give. - Me")
     stopifnot(pulp	  (name=name, from=from)  == "Someone, motherfucker, do you speak it? - Me")
     stopifnot(sake        (from=from)             == "For Fuck's sake! - Me")
     stopifnot(anyway      (name=name, from=from)  == "Who the fuck are you anyway, Someone, why are you stirring up so much trouble, and, who pays you? - Me")
@@ -141,6 +141,18 @@ if (runTests) {
     stopifnot(ridiculous  (from=from)             == "That's fucking ridiculous - Me")
     stopifnot(shit        (from=from)             == "Fuck this shit! - Me")
 
+    stopifnot(even	  (from=from)		  == "I can't fuckin' even. - Me")
+    stopifnot(fewer       (name=name, from=from)  == "Go fuck yourself Someone, you'll disappoint fewer people. - Me")
+    stopifnot(ftfy	  (from=from)		  == "Fuck That, Fuck You - Me")
+    stopifnot(holygrail   (from=from)             == "I don't want to talk to you, no more, you empty-headed animal, food trough wiper. I fart in your general direction. Your mother was a hamster and your father smelt of elderberries. Now go away or I shall taunt you a second time. - Me")
+    stopifnot(idea	  (from=from)		  == "That sounds like a fucking great idea! - Me")
+    stopifnot(jinglebells (from=from)             == "Fuck you, fuck me, fuck your family. Fuck your father, fuck your mother, fuck you and me. - Me")
+    stopifnot(legend_     (name=name, from=from)  == "Someone, you're a fucking legend. - Me")
+    stopifnot(logs        (from=from)             == "Check your fucking logs! - Me")
+    stopifnot(ratsarse    (from=from)             == "I don't give a rat's arse. - Me")
+    stopifnot(rockstar    (name=name, from=from)  == "Someone, you're a fucking Rock Star! - Me")
+    stopifnot(waste       (name=name, from=from)  == "I don't waste my fucking time with your bullshit Someone! - Me")
+
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
 
     ## shoutcloud
@@ -155,11 +167,11 @@ if (runTests) {
     ## cover randomFO
     set.seed(123)
     stopifnot(getRandomFO(name=name, from=from)  ==
-              structure("Happy fuckin' mornin'! - Me", class = "rfoaas"))
+              structure("Fuck you, asshole. - Me", class = "rfoaas"))
 
     set.seed(42)
     stopifnot(getRandomFO(name=name, from=from) ==
-              structure("What the fuck is your problem Someone? - Me", class = "rfoaas"))
+              structure("Someone, go and take a flying fuck at a rolling donut. - Me", class = "rfoaas"))
 
     v <- version()
     op <- operations()
