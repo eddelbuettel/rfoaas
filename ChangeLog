@@ -5,7 +5,7 @@
 	* R/foaas.R: Eleven new accessors (even, fewer, ftfty, holygrail,
 	idea, jinglebells, legend, logs, ratsarse, rockstar, waste) from
 	foas 2.1.0
-	* tests/runTestsAgainstFOAAS.R: Expanded tests
+	* tests/runTestsAgainstFOAAS.R: Reactivated, expanded and updated
 
 2018-08-20  Dirk Eddelbuettel  <edd@debian.org>
 
