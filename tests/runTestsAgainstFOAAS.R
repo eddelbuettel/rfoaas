@@ -141,6 +141,18 @@ if (runTests) {
     stopifnot(ridiculous  (from=from)             == "That's fucking ridiculous - Me")
     stopifnot(shit        (from=from)             == "Fuck this shit! - Me")
 
+    stopifnot(even	  (from=from)		  == "I can't fuckin' even. - Me")
+    stopifnot(fewer       (name=name, from=from)  == "Go fuck yourself Someone, you'll disappoint fewer people. - Me")
+    stopifnot(ftfy	  (from=from)		  == "Fuck That, Fuck You - Me")
+    stopifnot(holygrail   (from=from)             == "I don't want to talk to you, no more, you empty-headed animal, food trough wiper. I fart in your general direction. Your mother was a hamster and your father smelt of elderberries. Now go away or I shall taunt you a second time. - Me")
+    stopifnot(idea	  (from=from)		  == "That sounds like a fucking great idea! - Me")
+    stopifnot(jinglebells (from=from)             == "Fuck you, fuck me, fuck your family. Fuck your father, fuck your mother,     fuck you and me. - Me")
+    stopifnot(legend_     (name=name, from=from)  == "Someone, you're a fucking legend. - Me")
+    stopifnot(logs        (from=from)             == "Check your fucking logs! - Me")
+    stopifnot(ratsarse    (from=from)             == "I don't give a rat's arse. - Me")
+    stopifnot(rockstar    (name=name, from=from)  == "Someone, you're a fucking Rock Star! - Me")
+    stopifnot(waste       (name=name, from=from)  == "I don't waste my fucking time with your bullshit Someone! - Me")
+
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
 
     ## shoutcloud

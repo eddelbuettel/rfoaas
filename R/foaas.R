@@ -1,6 +1,6 @@
 ##  rfoaas -- An R interface to the FOAAS service
 ##
-##  Copyright (C) 2014 - 2018  Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2014 - 2020  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -166,6 +166,18 @@ particular  <- function(name, from=.from(), filter=.filter(), language=.language
 ridiculous  <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("ridiculous", from, filter=filter, language=language) }
 shit        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("shit", from, filter=filter, language=language) }
 
+even        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("even", from, filter=filter, language=language) }
+fewer       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("fewer", name, from, filter=filter, language=language) }
+ftfy        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("ftfy", from, filter=filter, language=language) }
+holygrail   <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("holygrail", from, filter=filter, language=language) }
+idea        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("idea", from, filter=filter, language=language) }
+jinglebells <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("jinglebells", from, filter=filter, language=language) }
+legend_     <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("legend", name, from, filter=filter, language=language) }
+logs        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("logs", from, filter=filter, language=language) }
+ratsarse    <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("ratsarse", from, filter=filter, language=language) }
+rockstar    <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("rockstar", name, from, filter=filter, language=language) }
+waste       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("waste", name, from, filter=filter, language=language) }
+
 ## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
@@ -176,7 +188,8 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "outside",	"madison",	"nugget",	"yoda",		"xmas",		"bday",		"shutup",
         "dalton",	"thumbs",	"back",		"bm",		"gfy",		"greed",	"think",
         "keep",		"look", 	"pulp",		"anyway", 	"blackadder", 	"deraadt", 	"problem",
-        "cocksplat",    "thinking",     "equity",       "fts",          "ing",          "particular"
+        "cocksplat",    "thinking",     "equity",       "fts",          "ing",          "particular",	"fewer",
+        "legend_",      "rockstar",     "waste"
     )
 
     just_from <-  c(
@@ -185,7 +198,8 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "tucker",	"bucket",	"family_",	"zayn",		"retard",	"me",		"mornin",
         "single_",	"looking",	"no",		"give",		"zero",		"sake", 	"maybe",
         "horse", 	"too",		"asshole",	"cup",		"fyyff",	"immensity",	"programmer",
-        "rtfm",         "bag",          "ridiculous",   "shit"
+        "rtfm",         "bag",          "ridiculous",   "shit", 	"even",         "ftfy",         "holygrail",
+        "idea",         "jinglebells",  "logs",         "ratsarse"
     )
 
     req <- sample(c(just_from, name_from), 1)

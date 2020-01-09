@@ -86,6 +86,17 @@
 \alias{particular}
 \alias{ridiculous}
 \alias{shit}
+\alias{even}
+\alias{fewer}
+\alias{ftfy}
+\alias{holygrail}
+\alias{idea}
+\alias{jinglebells}
+\alias{legend_}
+\alias{logs}
+\alias{ratsarse}
+\alias{rockstar}
+\alias{waste}
 \alias{getRandomFO}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -175,6 +186,17 @@
   particular(name, from, filter, language)
   ridiculous(from, filter, language)
   shit(from, filter, language)
+  even(from, filter, language)
+  fewer(name, from, filter, language)
+  ftfy(from, filter, language)
+  holygrail(from, filter, language)
+  idea(from, filter, language)
+  jinglebells(from, filter, language)
+  legend_(name, from, filter, language)
+  logs(from, filter, language)
+  ratsarse(from, filter, language)
+  rockstar(name, from, filter, language)
+  waste(name, from, filter, language)
 
   getRandomFO(name, from, filter, language)
 
