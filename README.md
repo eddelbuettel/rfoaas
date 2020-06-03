@@ -1,11 +1,18 @@
-## rfoaas [![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) [![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](https://cran.r-project.org/package=rfoaas) [![Dependencies](https://tinyverse.netlify.com/badge/rfoaas)](https://cran.r-project.org/package=rfoaas) [![Downloads](http://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](http://www.r-pkg.org/pkg/rfoaas) [![Code Coverage](https://codecov.io/gh/eddelbuettel/rfoaas/graph/badge.svg)](https://codecov.io/gh/eddelbuettel/rfoaas)
+## rfoaas: R interface to the [FOAAS](http://foaas.com) service 
 
-R interface to the [FOAAS](http://foaas.com) service 
+[![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) 
+[![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) 
+[![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](https://cran.r-project.org/package=rfoaas) 
+[![Dependencies](https://tinyverse.netlify.com/badge/rfoaas)](https://cran.r-project.org/package=rfoaas) 
+[![Downloads](http://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](http://www.r-pkg.org/pkg/rfoaas) 
+[![Code Coverage](https://codecov.io/gh/eddelbuettel/rfoaas/graph/badge.svg)](https://codecov.io/gh/eddelbuettel/rfoaas)
+[![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/rfoaas)](https://github.com/eddelbuettel/rfoaas)
 
 ### Where
 
 You can install released version of the package from
 [CRAN](https://cran.r-project.org/) using the
+
 ```{.r}
 install.packages("rfoaas")
 ```
