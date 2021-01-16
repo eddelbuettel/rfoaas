@@ -1,3 +1,7 @@
+2021-01-15  Dirk Eddelbuettel  <edd@debian.org>
+
+        * .github/workflows/ci.yaml: Add CI runner using r-ci
+
 2020-06-03  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml: Switch to bionic and R 4.0.*
