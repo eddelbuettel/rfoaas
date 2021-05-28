@@ -1,3 +1,7 @@
+2021-05-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (URL): Add URL to DESCRIPTION
+
 2021-01-15  Dirk Eddelbuettel  <edd@debian.org>
 
         * .github/workflows/ci.yaml: Add CI runner using r-ci
