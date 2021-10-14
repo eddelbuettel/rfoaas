@@ -1,6 +1,6 @@
 2021-05-27  Dirk Eddelbuettel  <edd@debian.org>
 
-	* DESCRIPTION (URL): Add URL to DESCRIPTION
+	* DESCRIPTION (URL): Add GitHub repo to URL in DESCRIPTION
 
 2021-01-15  Dirk Eddelbuettel  <edd@debian.org>
 
