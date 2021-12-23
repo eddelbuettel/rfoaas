@@ -1,6 +1,5 @@
 ## rfoaas: R interface to the [FOAAS](http://foaas.com) service 
 
-[![Build Status](https://travis-ci.org/eddelbuettel/rfoaas.svg)](https://travis-ci.org/eddelbuettel/rfoaas) 
 [![CI](https://github.com/eddelbuettel/rfoaas/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rfoaas/actions?query=workflow%3Aci)
 [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) 
 [![CRAN](http://www.r-pkg.org/badges/version/rfoaas)](https://cran.r-project.org/package=rfoaas) 
