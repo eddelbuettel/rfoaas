@@ -1,3 +1,14 @@
+2022-07-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 2.3.2
+
+	* R/foaas.R: Update to FOAAS 2.3.2 with six new accessors
+	* man/rfoaas-package.Rd: Updated accordingly
+	* tests/runTestsAgainstFOAAS.R: Idem
+
+	* README.md: Updated several URLs to https
+	* .Rbuildignore: Added
+
 2021-12-23  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Remove unused continuous integration artifact and badge
