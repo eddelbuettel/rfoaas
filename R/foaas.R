@@ -178,6 +178,13 @@ ratsarse    <- function(from=.from(), filter=.filter(), language=.language())   
 rockstar    <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("rockstar", name, from, filter=filter, language=language) }
 waste       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("waste", name, from, filter=filter, language=language) }
 
+absolutely  <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("absolutely", name, from, filter=filter, language=language) }
+dense       <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("dense", from, filter=filter, language=language) }
+dumbledore  <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("dumbledore", from, filter=filter, language=language) }
+lowpoly     <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("lowpoly", from, filter=filter, language=language) }
+understand  <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas("understand", name, from, filter=filter, language=language) }
+yeah        <- function(from=.from(), filter=.filter(), language=.language())                      { .foaas("yeah", from, filter=filter, language=language) }
+
 ## catch-all
 thing       <- function(name, from=.from(), filter=.filter(), language=.language())                { .foaas(name, from, filter=filter, language=language) }
 
@@ -189,7 +196,7 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "dalton",	"thumbs",	"back",		"bm",		"gfy",		"greed",	"think",
         "keep",		"look", 	"pulp",		"anyway", 	"blackadder", 	"deraadt", 	"problem",
         "cocksplat",    "thinking",     "equity",       "fts",          "ing",          "particular",	"fewer",
-        "legend_",      "rockstar",     "waste"
+        "legend_",      "rockstar",     "waste",	"absolutely",	"understand"
     )
 
     just_from <-  c(
@@ -199,7 +206,8 @@ getRandomFO <- function(name, from=.from(), filter=.filter(), language=.language
         "single_",	"looking",	"no",		"give",		"zero",		"sake", 	"maybe",
         "horse", 	"too",		"asshole",	"cup",		"fyyff",	"immensity",	"programmer",
         "rtfm",         "bag",          "ridiculous",   "shit", 	"even",         "ftfy",         "holygrail",
-        "idea",         "jinglebells",  "logs",         "ratsarse"
+        "idea",         "jinglebells",  "logs",         "ratsarse",	"dense",	"dumbledore",	"lowpoly",
+        "yeah"
     )
 
     req <- sample(c(just_from, name_from), 1)

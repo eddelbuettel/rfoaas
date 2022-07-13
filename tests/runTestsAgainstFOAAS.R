@@ -153,6 +153,14 @@ if (runTests) {
     stopifnot(rockstar    (name=name, from=from)  == "Someone, you're a fucking Rock Star! - Me")
     stopifnot(waste       (name=name, from=from)  == "I don't waste my fucking time with your bullshit Someone! - Me")
 
+    stopifnot(absolutely  (name=name, from=from)  == "Absolutely fucking Not, Someone, No Fucking Way! - Me")
+    stopifnot(dense       (from=from)             == "You disingenuous dense motherfucker! - Me")
+    stopifnot(dumbledore  (from=from)             == "Happiness can be found, even in the darkest of times, if one only remembers to fuck off. - Me")
+    stopifnot(lowpoly     (from=from)             == "You low polygon motherfucker! - Me")
+    stopifnot(yeah        (from=from)             == "Fuck YEAH! - Me")
+
+    stopifnot(understand( name=name, from=from)   == "Listen here Someone!  What part of 'Fuck Off' don't you understand? - Me")
+
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
 
     ## shoutcloud
@@ -171,11 +179,11 @@ if (runTests) {
 
     set.seed(42)
     stopifnot(getRandomFO(name=name, from=from) ==
-              structure("Someone, go and take a flying fuck at a rolling donut. - Me", class = "rfoaas"))
+              structure("You low polygon motherfucker! - Me", class = "rfoaas"))
 
     v <- version()
     op <- operations()
-    print(getRandomFO(name=name))
+    txt <- getRandomFO(name=name)
 
 }
 

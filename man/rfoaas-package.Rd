@@ -97,6 +97,12 @@
 \alias{ratsarse}
 \alias{rockstar}
 \alias{waste}
+\alias{absolutely}
+\alias{dense}
+\alias{dumbledore}
+\alias{lowpoly}
+\alias{understand}
+\alias{yeah}
 \alias{getRandomFO}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -197,7 +203,13 @@
   ratsarse(from, filter, language)
   rockstar(name, from, filter, language)
   waste(name, from, filter, language)
-
+  absolutely(name, from, filter, language)
+  dense(from, filter, language)
+  dumbledore(from, filter, language)
+  lowpoly(from, filter, language)
+  understand(name, from, filter, language)
+  yeah(from, filter, language)
+ 
   getRandomFO(name, from, filter, language)
 
   version()
