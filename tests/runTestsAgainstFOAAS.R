@@ -157,9 +157,8 @@ if (runTests) {
     stopifnot(dense       (from=from)             == "You disingenuous dense motherfucker! - Me")
     stopifnot(dumbledore  (from=from)             == "Happiness can be found, even in the darkest of times, if one only remembers to fuck off. - Me")
     stopifnot(lowpoly     (from=from)             == "You low polygon motherfucker! - Me")
+    stopifnot(understand  (name=name, from=from)  == "Listen here Someone!  What part of 'Fuck Off' don't you understand? - Me")
     stopifnot(yeah        (from=from)             == "Fuck YEAH! - Me")
-
-    stopifnot(understand( name=name, from=from)   == "Listen here Someone!  What part of 'Fuck Off' don't you understand? - Me")
 
     stopifnot(thing       (name=name, from=from)  == "Fuck Someone. - Me")
 
