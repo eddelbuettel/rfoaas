@@ -1,5 +1,7 @@
 2024-01-29  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Date, Version): Roll version and date
+
 	* R/foaas.R (.foaas): Try alternate (non-replacement) server URL
 
 2022-11-29  Dirk Eddelbuettel  <edd@debian.org>
