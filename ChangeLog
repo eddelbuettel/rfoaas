@@ -1,3 +1,7 @@
+2024-01-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R (.foaas): Try alternate (non-replacement) server URL
+
 2022-11-29  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v3

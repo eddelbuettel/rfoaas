@@ -1,6 +1,6 @@
 ##  rfoaas -- An R interface to the FOAAS service
 ##
-##  Copyright (C) 2014 - 2020  Dirk Eddelbuettel <edd@debian.org>
+##  Copyright (C) 2014 - 2024  Dirk Eddelbuettel <edd@debian.org>
 ##
 ##  This file is part of rfoaas
 ##
@@ -30,8 +30,9 @@
     ##
     ## -- but now we have to explicitly request it via accept headers, so we need http::GET
 
-    #srv <- "http://foaas.herokuapp.com"
-    srv <- "https://foaas.com"
+    ##srv <- "http://foaas.herokuapp.com"
+    srv <- "https://foaas.com"  				# borked as of 2024-01-29
+    #srv <- "https://foass.1001010.com/"			# serves only a small subset
     req <- paste(srv, ..., sep="/")		     	        # collate normal arguments
 
     ## deal with optional arguments by test and conditional appends
