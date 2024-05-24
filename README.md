@@ -3,7 +3,7 @@
 [![CI](https://github.com/eddelbuettel/rfoaas/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rfoaas/actions?query=workflow%3Aci)
 [![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-2.0.html) 
 [![CRAN](https://www.r-pkg.org/badges/version/rfoaas)](https://cran.r-project.org/package=rfoaas) 
-[![Dependencies](https://tinyverse.netlify.com/badge/rfoaas)](https://cran.r-project.org/package=rfoaas) 
+[![Dependencies](https://tinyverse.netlify.app/badge/rfoaas)](https://cran.r-project.org/package=rfoaas) 
 [![Downloads](https://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](https://www.r-pkg.org/pkg/rfoaas) 
 [![Code Coverage](https://codecov.io/gh/eddelbuettel/rfoaas/graph/badge.svg)](https://app.codecov.io/gh/eddelbuettel/rfoaas)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/rfoaas)](https://github.com/eddelbuettel/rfoaas)
