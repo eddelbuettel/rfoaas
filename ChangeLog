@@ -1,3 +1,7 @@
+2025-08-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml: Simplify via r-ci with included bootstrap
+
 2024-10-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Authors@R): Added
