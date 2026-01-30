@@ -1,12 +1,12 @@
 Package: rfoaas
 Type: Package
 Title: R Interface to 'FOAAS'
-Version: 2.3.2.1
-Date: 2024-01-29
+Version: 2.3.2.2
+Date: 2026-01-30
 Authors@R: person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
                   comment = c(ORCID = "0000-0001-6419-907X"))
 Description: R access to the 'FOAAS' (F... Off As A Service) web service is provided.
-URL: https://github.com/eddelbuettel/rfoaas/, http://dirk.eddelbuettel.com/code/rfoaas.html
+URL: https://github.com/eddelbuettel/rfoaas/, https://dirk.eddelbuettel.com/code/rfoaas.html
 BugReports: https://github.com/eddelbuettel/rfoaas/issues
 License: GPL (>= 2)
 Imports: httr

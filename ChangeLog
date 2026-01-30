@@ -1,5 +1,7 @@
 2026-01-30  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Date, Version): Roll version and date
+
 	* R/foaas.R: Adjusted to reduced (but existing) functionality at
 	'https://foass.1001010.com/' REST endpoint
 	* man/rfoaas-package.Rd: Idem
