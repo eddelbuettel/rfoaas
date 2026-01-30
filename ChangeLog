@@ -7,6 +7,8 @@
 	* man/rfoaas-package.Rd: Idem
 	* tests/runTestsAgainstFOAAS.R: Idem
 
+	* README.md: Update URLs, mention FOASS as a (partial) replacement
+
 2026-01-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml: Switch to actions/checkout@v6

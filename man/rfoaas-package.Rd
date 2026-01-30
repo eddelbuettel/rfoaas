@@ -283,8 +283,8 @@
   version (as text). All other methods return the requested FOAAS
   message using the given arguments.
 
-  See \url{http://foaas.com} for complete service details at the current
-  API level.
+  See \url{https://web.archive.org/web/20220714082158/https://foaas.com/}
+  for an archived copy of the initial service.
 
   At present, only plain text requests are made and returned (with one
   exception being \code{operations()}, see above).
@@ -298,7 +298,7 @@
   default value: either an R \code{options()} variable accessible via
   the key \code{rfoaasFilter}, or a default of \sQuote{none}. Currently,
   the only other permissible value is \sQuote{shoutcloud} to enable
-  filtering via the magnificient \url{http://shoutcloud.io} service.
+  filtering via the magnificient \url{https://shoutcloud.io} service.
 
 }
 \author{Dirk Eddelbuettel}

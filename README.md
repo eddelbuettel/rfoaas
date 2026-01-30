@@ -1,7 +1,7 @@
-## rfoaas: R interface to the [FOAAS](http://foaas.com) service 
+## rfoaas: R interface to the [FOAAS][foaas] / [FOASS][foass] service 
 
 [![CI](https://github.com/eddelbuettel/rfoaas/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rfoaas/actions?query=workflow%3Aci)
-[![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-2.0.html) 
+[![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.r-project.org/Licenses/GPL-2) 
 [![CRAN](https://www.r-pkg.org/badges/version/rfoaas)](https://cran.r-project.org/package=rfoaas) 
 [![Dependencies](https://tinyverse.netlify.app/badge/rfoaas)](https://cran.r-project.org/package=rfoaas) 
 [![Downloads](https://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](https://www.r-pkg.org/pkg/rfoaas) 
@@ -20,7 +20,7 @@ function.
 
 ### Example
 
-Just like [FOAAS](https://www.foaas.com), the package provides a number of
+Just like [FOAAS][foaas] / [FOASS][foass], the package provides a number of
 standard profanity-issuing access points, as well as some less profane
 classics from pop culture:
 
@@ -50,7 +50,7 @@ Liebe, Wissen - hat die Aufwärtsschub der Menschheit geprägt. - Random R Hacke
 R> 
 ```
 
-Lastly, there is also an interface to [shoutcloud](http://shoutcloud.io/)
+Lastly, there is also an interface to [shoutcloud](https://shoutcloud.io/)
 which provides the immensely useful ALL CAPS AS A SERVICE because, well,
 sometimes you just got to yell:
 
@@ -64,6 +64,10 @@ MANKIND. - RANDOM R HACKER
 R> 
 ```
 
+As the [FOAAS][foaas] service is on hiatus, we are plugging the gap with (partial) replacement
+[FOASS][foass]. Endpoints not supported by the latter have been commented out, a few new ones have
+been added and the expectations encoded in the test file have been updated.
+
 ### Who
 
 Dirk Eddelbuettel
@@ -71,7 +75,7 @@ Dirk Eddelbuettel
 ### License
 
 GPL (>= 2) as most of my code though a case could be made for aligning with
-the [WTFPL](http://www.wtfpl.net/) license that the
+the [WTFPL](https://www.wtfpl.net/) license that the
 [FOAAS code](https://github.com/tomdionysus/foaas/) is under. 
 
 ### Contributor Code of Conduct
@@ -80,3 +84,6 @@ This project adheres to No Code of Conduct.  We are all adults.  We accept anyon
 Nothing else matters.
 
 For more information please visit the [No Code of Conduct](https://github.com/domgetter/NCoC) page.
+
+[foaas]: https://web.archive.org/web/20220714082158/https://foaas.com/
+[foass]: https://foass.1001010.com/
