@@ -1,3 +1,10 @@
+2026-01-30  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/foaas.R: Adjusted to reduced (but existing) functionality at
+	'https://foass.1001010.com/' REST endpoint
+	* man/rfoaas-package.Rd: Idem
+	* tests/runTestsAgainstFOAAS.R: Idem
+
 2026-01-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml: Switch to actions/checkout@v6
