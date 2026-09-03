@@ -17,101 +17,101 @@
 \alias{pink}
 \alias{life}
 \alias{chainsaw}
-%% \alias{outside}
+\alias{outside}
 \alias{thanks}
 \alias{flying}
-%% \alias{fascinating}
-%% \alias{madison}
-%% \alias{cool}
-%% \alias{field}
-%% \alias{nugget}
-%% \alias{yoda}
-%% \alias{ballmer}
-%% \alias{what}
-%% \alias{because}
-%% \alias{caniuse}
-%% \alias{bye}
-%% \alias{diabetes}
-%% \alias{bus}
-%% \alias{xmas}
-%% \alias{awesome}
-%% \alias{tucker}
-%% \alias{bucket}
-%% \alias{bday}
-%% \alias{family_}
-%% \alias{shutup}
-%% \alias{zayn}
-%% \alias{keepcalm}
-%% \alias{dalton}
-%% \alias{dosomething}
-%% \alias{off_with}
-%% \alias{retard}
-%% \alias{thumbs}
-%% \alias{back}
-%% \alias{bm}
-%% \alias{gfy}
-%% \alias{greed}
-%% \alias{me}
-%% \alias{mornin}
-%% \alias{think}
-%% \alias{keep}
-%% \alias{single_}
-%% \alias{look}
-%% \alias{looking}
-%% \alias{no}
-%% \alias{give}
-%% \alias{zero}
-%% \alias{pulp}
-%% \alias{sake}
-%% \alias{anyway}
-%% \alias{maybe}
-%% \alias{blackadder}
-%% \alias{horse}
-%% \alias{deraadt}
-%% \alias{problem}
-%% \alias{cocksplat}
-%% \alias{too}
-%% \alias{thing}
-%% \alias{asshole}
-%% \alias{cup}
-%% \alias{fyyff}
-%% \alias{immensity}
-%% \alias{programmer}
-%% \alias{rtfm}
-%% \alias{thinking}
+\alias{fascinating}
+\alias{madison}
+\alias{cool}
+\alias{field}
+\alias{nugget}
+\alias{yoda}
+\alias{ballmer}
+\alias{what}
+\alias{because}
+\alias{caniuse}
+\alias{bye}
+\alias{diabetes}
+\alias{bus}
+\alias{xmas}
+\alias{awesome}
+\alias{tucker}
+\alias{bucket}
+\alias{bday}
+\alias{family_}
+\alias{shutup}
+\alias{zayn}
+\alias{keepcalm}
+\alias{dalton}
+\alias{dosomething}
+\alias{off_with}
+\alias{retard}
+\alias{thumbs}
+\alias{back}
+\alias{bm}
+\alias{gfy}
+\alias{greed}
+\alias{me}
+\alias{mornin}
+\alias{think}
+\alias{keep}
+\alias{single_}
+\alias{look}
+\alias{looking}
+\alias{no}
+\alias{give}
+\alias{zero}
+\alias{pulp}
+\alias{sake}
+\alias{anyway}
+\alias{maybe}
+\alias{blackadder}
+\alias{horse}
+\alias{deraadt}
+\alias{problem}
+\alias{cocksplat}
+\alias{too}
+\alias{thing}
+\alias{asshole}
+\alias{cup}
+\alias{fyyff}
+\alias{immensity}
+\alias{programmer}
+\alias{rtfm}
+\alias{thinking}
 \alias{bag}
-%% \alias{equity}
-%% \alias{fts}
-%% \alias{ing}
-%% \alias{particular}
-%% \alias{ridiculous}
-%% \alias{shit}
-%% \alias{even}
-%% \alias{fewer}
-%% \alias{ftfy}
-%% \alias{holygrail}
-%% \alias{idea}
-%% \alias{jinglebells}
-%% \alias{legend_}
-%% \alias{logs}
-%% \alias{ratsarse}
-%% \alias{rockstar}
-%% \alias{waste}
-%% \alias{absolutely}
-%% \alias{dense}
-%% \alias{dumbledore}
-%% \alias{lowpoly}
-%% \alias{understand}
-%% \alias{yeah}
-
-\alias{bowl}
-\alias{eat}
-\alias{essex}
-\alias{given}
-\alias{ity}
-\alias{lawn}
-\alias{london}
-
+\alias{equity}
+\alias{fts}
+\alias{ing}
+\alias{particular}
+\alias{ridiculous}
+\alias{shit}
+\alias{even}
+\alias{fewer}
+\alias{ftfy}
+\alias{holygrail}
+\alias{idea}
+\alias{jinglebells}
+\alias{legend_}
+\alias{logs}
+\alias{ratsarse}
+\alias{rockstar}
+\alias{waste}
+\alias{absolutely}
+\alias{dense}
+\alias{dumbledore}
+\alias{lowpoly}
+\alias{understand}
+\alias{yeah}
+%% -- interim
+%% \alias{bowl}
+%% \alias{eat}
+%% \alias{essex}
+%% \alias{given}
+%% \alias{ity}
+%% \alias{lawn}
+%% \alias{london}
+%%
 \alias{getRandomFO}
 \docType{package}
 \title{R Interface to FOAAS}
@@ -133,99 +133,99 @@
   pink(name, filter, language)
   life(name, filter, language)
   chainsaw(name, from, filter, language)
-  ## outside(name, from, filter, language)
+  outside(name, from, filter, language)
   thanks(from, filter, language)
-  ## fascinating(from, filter, language)
-  ## madison(name, from, filter, language)
-  ## cool(from, filter, language)
-  ## field(name, from, reference, filter, language)
-  ## nugget(name, from, filter, language)
-  ## yoda(name, from, filter, language)
-  ## ballmer(name, company, from, filter, language)
-  ## what(from, filter, language)
-  ## because(from, filter, language)
-  ## caniuse(tool, from, filter, language)
-  ## bye(from, filter, language)
-  ## diabetes(from, filter, language)
-  ## bus(from, filter, language)
-  ## xmas(name, from, filter, language)
-  ## awesome(from, filter, language)
-  ## tucker(from, filter, language)
-  ## bucket(from, filter, language)
-  ## bday(name, from, filter, language)
-  ## family_(from, filter, language)
-  ## shutup(name, from, filter, language)
-  ## zayn(from, filter, language)
-  ## keepcalm(reaction, from, filter, language)
-  ## dalton(name, from, filter, language)
-  ## dosomething(do, something, from, filter, language)
-  ## off_with(name, from, filter, language)
-  ## retard(from, filter, language)
-  ## thumbs(name, from, filter, language)
-  ## back(name, from, filter, language)
-  ## bm(name, from, filter, language)
-  ## gfy(name, from, filter, language)
-  ## greed(something, from, filter, language)
-  ## me(from, filter, language)
-  ## mornin(from, filter, language)
-  ## think(name, from, filter, language)
-  ## keep(name, from, filter, language)
-  ## single_(from, filter, language)
-  ## look(name, from, filter, language)
-  ## looking(from, filter, language)
-  ## no(from, filter, language)
-  ## give(from, filter, language)
-  ## zero(from, filter, language)
-  ## pulp(name, from, filter, language)
-  ## sake(from, filter, language)
-  ## anyway(name, from, filter, language)
-  ## maybe(from, filter, language)
-  ## blackadder(name, from, filter, language)
-  ## horse(from, filter, language)
-  ## deraadt(name, from, filter, language)
-  ## problem(name, from, filter, language)
-  ## cocksplat(name, from, filter, language)
-  ## too(from, filter, language)
-  ## thing(name, from, filter, language)
-  ## asshole(from, filter, language)
-  ## cup(from, filter, language)
-  ## fyyff(from, filter, language)
-  ## immensity(from, filter, language)
-  ## programmer(from, filter, language)
-  ## rtfm(from, filter, language)
-  ## thinking(name, from, filter, language)
-  bag(name, from, filter, language)
-  ## equity(name, from, filter, language)
-  ## fts(name, from, filter, language)
-  ## ing(name, from, filter, language)
-  ## particular(name, from, filter, language)
-  ## ridiculous(from, filter, language)
-  ## shit(from, filter, language)
-  ## even(from, filter, language)
-  ## fewer(name, from, filter, language)
-  ## ftfy(from, filter, language)
-  ## holygrail(from, filter, language)
-  ## idea(from, filter, language)
-  ## jinglebells(from, filter, language)
-  ## legend_(name, from, filter, language)
-  ## logs(from, filter, language)
-  ## ratsarse(from, filter, language)
-  ## rockstar(name, from, filter, language)
-  ## waste(name, from, filter, language)
-  ## absolutely(name, from, filter, language)
-  ## dense(from, filter, language)
-  ## dumbledore(from, filter, language)
-  ## lowpoly(from, filter, language)
-  ## understand(name, from, filter, language)
-  ## yeah(from, filter, language)
+  fascinating(from, filter, language)
+  madison(name, from, filter, language)
+  cool(from, filter, language)
+  field(name, from, reference, filter, language)
+  nugget(name, from, filter, language)
+  yoda(name, from, filter, language)
+  ballmer(name, company, from, filter, language)
+  what(from, filter, language)
+  because(from, filter, language)
+  caniuse(tool, from, filter, language)
+  bye(from, filter, language)
+  diabetes(from, filter, language)
+  bus(from, filter, language)
+  xmas(name, from, filter, language)
+  awesome(from, filter, language)
+  tucker(from, filter, language)
+  bucket(from, filter, language)
+  bday(name, from, filter, language)
+  family_(from, filter, language)
+  shutup(name, from, filter, language)
+  zayn(from, filter, language)
+  keepcalm(reaction, from, filter, language)
+  dalton(name, from, filter, language)
+  dosomething(do, something, from, filter, language)
+  off_with(name, from, filter, language)
+  retard(from, filter, language)
+  thumbs(name, from, filter, language)
+  back(name, from, filter, language)
+  bm(name, from, filter, language)
+  gfy(name, from, filter, language)
+  greed(something, from, filter, language)
+  me(from, filter, language)
+  mornin(from, filter, language)
+  think(name, from, filter, language)
+  keep(name, from, filter, language)
+  single_(from, filter, language)
+  look(name, from, filter, language)
+  looking(from, filter, language)
+  no(from, filter, language)
+  give(from, filter, language)
+  zero(from, filter, language)
+  pulp(name, from, filter, language)
+  sake(from, filter, language)
+  anyway(name, from, filter, language)
+  maybe(from, filter, language)
+  blackadder(name, from, filter, language)
+  horse(from, filter, language)
+  deraadt(name, from, filter, language)
+  problem(name, from, filter, language)
+  cocksplat(name, from, filter, language)
+  too(from, filter, language)
+  thing(name, from, filter, language)
+  asshole(from, filter, language)
+  cup(from, filter, language)
+  fyyff(from, filter, language)
+  immensity(from, filter, language)
+  programmer(from, filter, language)
+  rtfm(from, filter, language)
+  thinking(name, from, filter, language)
+  bag(from, filter, language)
+  equity(name, from, filter, language)
+  fts(name, from, filter, language)
+  ing(name, from, filter, language)
+  particular(name, from, filter, language)
+  ridiculous(from, filter, language)
+  shit(from, filter, language)
+  even(from, filter, language)
+  fewer(name, from, filter, language)
+  ftfy(from, filter, language)
+  holygrail(from, filter, language)
+  idea(from, filter, language)
+  jinglebells(from, filter, language)
+  legend_(name, from, filter, language)
+  logs(from, filter, language)
+  ratsarse(from, filter, language)
+  rockstar(name, from, filter, language)
+  waste(name, from, filter, language)
+  absolutely(name, from, filter, language)
+  dense(from, filter, language)
+  dumbledore(from, filter, language)
+  lowpoly(from, filter, language)
+  understand(name, from, filter, language)
+  yeah(from, filter, language)
 
-  bowl(name, from, filter, language)
-  eat(name, from, filter, language)
-  essex(name, from, filter, language)
-  given(from, filter, language)
-  ity(name, from, filter, language)
-  lawn(name, from, filter, language)
-  london(name, from, filter, language)
+  ## bowl(name, from, filter, language)
+  ## eat(name, from, filter, language)
+  ## essex(name, from, filter, language)
+  ## given(from, filter, language)
+  ## ity(name, from, filter, language)
+  ## lawn(name, from, filter, language)
+  ## london(name, from, filter, language)
   
   getRandomFO(name, from, filter, language)
 
