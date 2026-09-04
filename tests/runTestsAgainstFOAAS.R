@@ -48,6 +48,7 @@ if (runTests) {
 
     ## basic operations
     stopifnot(off         (name=name, from=from)  == "Fuck off, Someone. - Me")
+    stopifnot(you         (name=name, from=from)  == "Fuck you, Someone. - Me")
     stopifnot(this        (from=from)             == "Fuck this. - Me")
     stopifnot(that        (from=from)             == "Fuck that. - Me")
     stopifnot(everything  (from=from)             == "Fuck everything. - Me")

@@ -4,7 +4,8 @@
 	* man/rfoaas-package.Rd: Idem
 
 	* R/foaas.R: Filter out noise added when language filter used
-	* tests/runTestsAgainstFOAAS.R: Restore one language test
+	* tests/runTestsAgainstFOAAS.R: Restore one language test, add one
+	missing test
 
 	* .github/workflows/ci.yaml: Switch to actions/checkout@v7, also turn
 	coverage back on, ensure tests run at CI
