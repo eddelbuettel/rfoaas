@@ -168,7 +168,7 @@ if (runTests) {
     ## stopifnot(off         (name=name, from=from, filter="shoutcloud")  == "FUCK OFF, SOMEONE. - ME")
 
     ## language
-    ## stopifnot(off         (name=name, from=from, language="de")  == "Fuck off jemand. - Me")
+    stopifnot(off         (name=name, from=from, language="de")  == "Verpiss dich, irgendjemand.")
 
     ## shoutcloud and language -- cannot test, responses change
     #stopifnot(off         (name=name, from=from, filter="shoutcloud", language="de")  == "FUCK OFF JEMAND. - ME")

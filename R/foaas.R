@@ -42,23 +42,24 @@
                         "none" = "",
                         "shoutcloud" = "shoutcloud"))
 
-    if (any(supargs != "")) {           			# if we have arguments
+    if (any(supargs != "")) {           			# if we have arguments  #nocov start
         supargs <- paste(supargs, collapse="&")                 # collate them, but ...
         supargs <- gsub("&$", "", gsub("^&", "", supargs)) 	# ... nuke leading/trailing '&'
         req <- paste(req, supargs, sep="?")                     # and append
-    }
+    }                                                           # #nocov end
 
     req <- URLencode(req)					# encode as a URL just in case
     res <- GET(req, accept("text/plain"))
     txt <- content(res, "text", encoding="utf-8")
+    txt <- trimws(gsub("undefined$", "", txt), which="right") 	# there is trailing '   undefined'
     class(txt) <- "rfoaas"
     txt
 }
 
 print.rfoaas <- function(x, width = NULL, ...) {
-    if (is.null(width)) width <- 0.9 * getOption("width")
-    if (width < 10) stop("'width' must be greater than 10", call.=FALSE) #nocov
-    invisible(sapply(strwrap(x, width), cat, "\n"))
+    if (is.null(width)) width <- 0.9 * getOption("width")	# #nocov start
+    if (width < 10) stop("'width' must be greater than 10", call. = FALSE)
+    invisible(sapply(strwrap(x, width), cat, "\n"))		# #nocov end
 }
 
 .from <- function() {
