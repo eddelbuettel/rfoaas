@@ -4,7 +4,7 @@
 	* man/rfoaas-package.Rd: Idem
 
 	* .github/workflows/ci.yaml: Switch to actions/checkout@v7, also turn
-	coverage back on
+	coverage back on, ensure tests run at CI
 
 2026-09-03  Dirk Eddelbuettel  <edd@debian.org>
 

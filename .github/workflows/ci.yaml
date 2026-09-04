@@ -31,6 +31,8 @@ jobs:
 
       - name: Test
         run: ./run.sh run_tests
+        env:
+          RunFOAASTests: "yes"
 
       - name: Coverage
         if: ${{ matrix.os == 'ubuntu-latest' }}
