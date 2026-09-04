@@ -243,9 +243,8 @@
     user name obtained via \code{\link{Sys.info}}.}
   \item{filter}{An optional filter. If unset, the (optional) global
     variable \sQuote{rfoaasFilter} can provide a default, and a fallback
-    value of \sQuote{none}. Currently the only other permitted value is
-    \sQuote{shoutcloud} to enable filtering via the magnificient
-    \url{http://shoutcloud.io} service.}
+    value of \sQuote{none}. This had been used with \sQuote{shoutcloud.io}
+    but that service is now down.}
   \item{language}{An optional filter argument. If set, the message is
     internationalized to the given (optional) language stated as the the
     usual two-character code such as \sQuote{fr}, \sQuote{de},
@@ -296,10 +295,9 @@
 
   The \code{filter} argument uses an internal helper function to supply a
   default value: either an R \code{options()} variable accessible via
-  the key \code{rfoaasFilter}, or a default of \sQuote{none}. Currently,
-  the only other permissible value is \sQuote{shoutcloud} to enable
-  filtering via the magnificient \url{https://shoutcloud.io} service.
-
+  the key \code{rfoaasFilter}, or a default of \sQuote{none}. This was used
+  with value \sQuote{shoutcloud} when the \code{shoutcloud.io} service was
+  running.
 }
 \author{Dirk Eddelbuettel}
 \examples{

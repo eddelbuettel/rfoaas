@@ -1,5 +1,8 @@
 2026-09-04  Dirk Eddelbuettel  <edd@debian.org>
 
+	* README.md: Remove references to defunct shoutcloud.io service
+	* man/rfoaas-package.Rd: Idem
+
 	* .github/workflows/ci.yaml: Switch to actions/checkout@v7, also turn
 	coverage back on
 

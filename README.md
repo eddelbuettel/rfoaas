@@ -1,9 +1,10 @@
-## rfoaas: R interface to the [FOAAS][foaas] / [FOASS][foass] service 
+## rfoaas: R interface to the [FOAAS][foaas] service 
 
 [![CI](https://github.com/eddelbuettel/rfoaas/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rfoaas/actions?query=workflow%3Aci)
 [![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.r-project.org/Licenses/GPL-2) 
 [![CRAN](https://www.r-pkg.org/badges/version/rfoaas)](https://cran.r-project.org/package=rfoaas) 
 [![Dependencies](https://tinyverse.netlify.app/badge/rfoaas)](https://cran.r-project.org/package=rfoaas) 
+[![r-universe](https://eddelbuettel.r-universe.dev/badges/rfoaas)](https://eddelbuettel.r-universe.dev/rfoaas)
 [![Downloads](https://cranlogs.r-pkg.org/badges/rfoaas?color=brightgreen)](https://www.r-pkg.org/pkg/rfoaas) 
 [![Code Coverage](https://codecov.io/gh/eddelbuettel/rfoaas/graph/badge.svg)](https://app.codecov.io/gh/eddelbuettel/rfoaas)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/rfoaas)](https://github.com/eddelbuettel/rfoaas)
@@ -50,20 +51,6 @@ Liebe, Wissen - hat die Aufwärtsschub der Menschheit geprägt. - Random R Hacke
 R> 
 ```
 
-Lastly, there is also an interface to [shoutcloud](https://shoutcloud.io/)
-which provides the immensely useful ALL CAPS AS A SERVICE because, well,
-sometimes you just got to yell:
-
-```{.r}
-R> greed("R Programming", "Random R Hacker", filter="shoutcloud")
-THE POINT IS, LADIES AND GENTLEMAN, THAT R PROGRAMMING -- FOR LACK OF A BETTER WORD -- IS 
-GOOD. R PROGRAMMING IS RIGHT. R PROGRAMMING WORKS. R PROGRAMMING CLARIFIES, CUTS THROUGH, 
-AND CAPTURES THE ESSENCE OF THE EVOLUTIONARY SPIRIT. R PROGRAMMING, IN ALL OF ITS FORMS -- R 
-PROGRAMMING FOR LIFE, FOR MONEY, FOR LOVE, KNOWLEDGE -- HAS MARKED THE UPWARD SURGE OF 
-MANKIND. - RANDOM R HACKER 
-R> 
-```
-
 As the [FOAAS][foaas] service is on hiatus, we are plugging the gap with (partial) replacement
 [FOASS][foass]. Endpoints not supported by the latter have been commented out, a few new ones have
 been added and the expectations encoded in the test file have been updated.
@@ -85,5 +72,4 @@ Nothing else matters.
 
 For more information please visit the [No Code of Conduct](https://github.com/domgetter/NCoC) page.
 
-[foaas]: https://web.archive.org/web/20220714082158/https://foaas.com/
-[foass]: https://foass.1001010.com/
+[foaas]: https://foaas.io
