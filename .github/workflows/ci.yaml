@@ -39,3 +39,4 @@ jobs:
         run: ./run.sh coverage
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          RunFOAASTests: "yes"
