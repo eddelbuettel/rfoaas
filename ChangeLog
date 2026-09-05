@@ -4,6 +4,8 @@
 
 	* man/rfoaas-package.Rd: Also document flying()
 
+	* README.md: Minor edits (post release) removing more foass references
+
 2026-09-04  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Remove references to defunct shoutcloud.io service

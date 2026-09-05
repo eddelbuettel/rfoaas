@@ -21,7 +21,7 @@ function.
 
 ### Example
 
-Just like [FOAAS][foaas] / [FOASS][foass], the package provides a number of
+Just like [FOAAS][foaas], the package provides a number of
 standard profanity-issuing access points, as well as some less profane
 classics from pop culture:
 
@@ -50,10 +50,6 @@ R Programmierung, in all seinen Formen - R-Programmierung für das Leben, für G
 Liebe, Wissen - hat die Aufwärtsschub der Menschheit geprägt. - Random R Hacker 
 R> 
 ```
-
-As the [FOAAS][foaas] service is on hiatus, we are plugging the gap with (partial) replacement
-[FOASS][foass]. Endpoints not supported by the latter have been commented out, a few new ones have
-been added and the expectations encoded in the test file have been updated.
 
 ### Who
 
