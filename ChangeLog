@@ -1,3 +1,7 @@
+2026-09-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* man/rfoaas-package.Rd: Also document flying()
+
 2026-09-04  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Remove references to defunct shoutcloud.io service

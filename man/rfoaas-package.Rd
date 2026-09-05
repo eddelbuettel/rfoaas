@@ -135,6 +135,7 @@
   chainsaw(name, from, filter, language)
   outside(name, from, filter, language)
   thanks(from, filter, language)
+  flying(from, filter, language)
   fascinating(from, filter, language)
   madison(name, from, filter, language)
   cool(from, filter, language)
